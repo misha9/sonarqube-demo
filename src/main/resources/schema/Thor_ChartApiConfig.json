@@ -1,0 +1,150 @@
+{
+  "thorIntentShare": {
+    "chartName": "Intent Share",
+    "queries": [
+      {
+        "module": "COMMON",
+        "requestQueryMap": "{\r\n  \"storeCode\" : \"storeCode\", \n\"gender\" : \"gender\"}",
+        "dateRefField": "",
+        "indexName": "thor",
+        "esInstance" : "SECONDARY",
+        "aggrQuery": "{\"aggs\":{\"AGGR\":{\"filter\":{\"bool\":{\"must_not\":[{\"term\":{\"data.custom.blocks.intent.keyword\":\"low_confidence\"}}]}},\"aggs\":{\"Intent Hits\":{\"terms\":{\"field\":\"data.custom.blocks.intent.keyword\",\"size\":100},\"aggs\":{\"value_count\":{\"value_count\":{\"field\":\"data.custom.blocks.intent.keyword\"}}}}}}}}"
+
+      }
+    ],
+    "chartType": "horizontalbar",	
+    "valueType": "number",
+    "action": "",
+    "documentType": "_doc",
+    "drillChart": "none",
+    "aggregationPaths": [
+      "Intent Hits"
+    ],
+    "insight": {
+    },
+    "_comment": " "
+  },
+  "userBotConversationRelay": {
+    "chartName": "User Bot Conversation Relay",
+    "queries": [
+      {
+        "module": "COMMON",
+        "requestQueryMap": "{\r\n  \"storeCode\" : \"storeCode\", \n\"gender\" : \"gender\"}",
+        "dateRefField": "",
+        "indexName": "thor",
+        "esInstance" : "SECONDARY",
+        "aggrQuery": "{\"aggs\":{\"User Bot Conversation Relay\":{\"terms\":{\"field\":\"event.keyword\",\"size\":100},\"aggs\":{\"value_count\":{\"value_count\":{\"field\":\"event.keyword\"}}}}}}"
+
+      }
+    ],
+    "chartType": "pie",
+    "valueType": "number",
+    "action": "",
+    "documentType": "_doc",
+    "drillChart": "none",
+    "aggregationPaths": [
+      "User Bot Conversation Relay"
+    ],
+    "insight": {
+    },
+    "_comment": " "
+  },
+  "thorIntentCount": {
+    "chartName": "Number of Intents",
+    "queries": [
+      {
+        "module": "COMMON",
+        "requestQueryMap": "{\r\n  \"storeCode\" : \"storeCode\", \n\"gender\" : \"gender\"}",
+        "dateRefField": "",
+        "indexName": "thor",
+        "esInstance" : "SECONDARY",
+        "aggrQuery": "{\"aggs\":{\"Intent Count\":{\"cardinality\":{\"field\":\"data.custom.blocks.intent.keyword\",\"precision_threshold\":100}}}}"
+      }
+    ],
+    "chartType": "metric",
+    "valueType": "number",
+    "drillChart": "none",
+    "documentType": "_doc",
+    "action": "",
+    "aggregationPaths": [
+      "Intent Count"
+    ],
+    "insight": {
+    },
+    "_comment": " "
+  },
+  "confidenceLevel": {
+    "chartName": "Confidence",
+    "queries": [
+      {
+        "module": "COMMON",
+        "requestQueryMap": "{\r\n  \"storeCode\" : \"storeCode\", \n\"gender\" : \"gender\"}",
+        "dateRefField": "",
+        "indexName": "thor",
+        "esInstance" : "SECONDARY",
+        "aggrQuery": "{\"aggs\":{\"Confidence\":{\"avg\":{\"field\":\"confidence\"}}}}"
+      }
+    ],
+    "chartType": "metric",
+    "valueType": "number",
+    "drillChart": "none",
+    "documentType": "_doc",
+    "action": "",
+    "aggregationPaths": [
+      "Confidence"
+    ],
+    "insight": {
+    },
+    "_comment": " "
+  },
+  "totalConversationCount": {
+    "chartName": "Total Conversation Count",
+    "queries": [
+      {
+        "module": "COMMON",
+        "requestQueryMap": "{\r\n  \"storeCode\" : \"storeCode\", \n\"gender\" : \"gender\"}",
+        "dateRefField": "",
+        "indexName": "thor",
+        "esInstance" : "SECONDARY",
+        "aggrQuery": "{\"aggs\":{\"Total Conversation Count\":{\"value_count\":{\"field\":\"event.keyword\"}}}}"
+      }
+    ],
+    "chartType": "metric",
+    "valueType": "number",
+    "drillChart": "none",
+    "documentType": "_doc",
+    "action": "",
+    "aggregationPaths": [
+      "Total Conversation Count"
+    ],
+    "insight": {
+    },
+    "_comment": " "
+  },
+  "interactionTrend": {
+    "chartName": "Interaction Trend",
+    "queries": [
+      {
+        "module": "COMMON",
+        "dateRefField": "",
+        "requestQueryMap": "{\r\n  \"status\" : \"status\", \n\"active\" : \"active\"}",
+        "indexName": "thor",
+        "esInstance" : "SECONDARY",
+        "aggrQuery": "{\"aggs\":{\"Interaction Trend\":{\"date_histogram\":{\"field\":\"timeStamp\",\"interval\":\"day\",\"script\":{\"inline\":\"doc['timeStamp'].value * 1000\",\"lang\":\"painless\"}},\"aggs\":{\"valuecount\":{\"value_count\":{\"field\":\"event.keyword\"}}}}}}"
+      }
+    ],
+    "chartType": "line",
+    "valueType": "number",
+    "action": "",
+    "drillChart": "none",
+    "documentType": "_doc",
+    "aggregationPaths": [
+      "Interaction Trend"
+    ],
+    "isCumulative": false,
+    "interval": "day",
+    "insight": {
+    },
+    "_comment": " "
+  }
+}

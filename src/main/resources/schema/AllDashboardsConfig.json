@@ -1,0 +1,71 @@
+{
+  "_comment": "Holds mapping for all visualizations supported by the application",
+  "dashboards" : [
+    {
+      "_comment":"",
+      "id": 1,
+      "name" : "Aurora Desk Dashboards",
+      "isDefault" : true,
+      "code": "AuroraDesk",
+      "urls": [
+        {
+          "configuration": "/dashboard/getDashboardConfig/AuroraDesk/home",
+          "getCharts": "/dashboard/getChartV2/AuroraDesk"
+        }
+      ]
+    },
+    {
+      "_comment":"",
+      "id": 2,
+      "name" : "Pulz Dashboards",
+      "isDefault" : true,
+      "code": "Pulz",
+      "urls": [
+        {
+          "configuration": "/dashboard/getDashboardConfig/Pulz/home",
+          "getCharts": "/dashboard/getChartV2/Pulz"
+        }
+      ]
+    },
+    {
+      "_comment":"",
+      "id": 3,
+      "name" : "Thor Dashboards",
+      "isDefault" : true,
+      "code": "Thor",
+      "urls": [
+        {
+          "configuration": "/dashboard/getDashboardConfig/Thor/home",
+          "getCharts": "/dashboard/getChartV2/Thor"
+        }
+      ]
+    },
+    {
+      "_comment":"",
+      "id": 4,
+      "name" : "Kronos Dashboards",
+      "isDefault" : true,
+      "code": "Kronos",
+      "urls": [
+        {
+          "configuration": "/dashboard/getDashboardConfig/Kronos/home",
+          "getCharts": "/dashboard/getChartV2/Kronos"
+        }
+      ]
+    },
+    {
+      "_comment":"",
+      "id": 5,
+      "name" : "THire Dashboards",
+      "isDefault" : true,
+      "code": "THire",
+      "urls": [
+        {
+          "configuration": "/dashboard/getDashboardConfig/THire/home",
+          "getCharts": "/dashboard/getChartV2/THire"
+        }
+      ]
+    }
+
+  ]
+}

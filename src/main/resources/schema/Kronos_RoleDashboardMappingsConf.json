@@ -1,0 +1,420 @@
+{
+  "_comment": "Holds mapping for each role with and its associated dashboards",
+  "roles" : [
+    {
+      "_comment":"This is the Tarento Admin role who sees mostly all the dashboards",
+      "roleId": 2068,
+      "roleName" : "Tarento Admin",
+      "isSuper" : "",
+      "orgId": "",
+      "dashboards": [	
+		{
+          "name": "MIS Summary Dashboard",
+          "id": "missummarydashboard"
+        },
+        {
+          "name": "MIS IBU Dashboard",
+          "id": "ibumisdashboard"
+        },      
+        {
+          "name": "Time Dashboard",
+          "id": "home"
+        },
+        {
+          "name": "Leaves Dashboard",
+          "id": "leave"
+        },
+        {
+          "name": "Trainings Dashboard",
+          "id": "trainings"
+        },
+        {
+          "name": "Skills Dashboard",
+          "id": "skills"
+        },
+        {
+          "name": "Awards Dashboard",
+          "id": "awardsdashboards"
+        },
+        {
+          "name": "Sales Dashboards",
+          "id": "salesdashboards"
+        },
+        {
+          "name": "Expense Dashboard",
+          "id": "expensedashboards"
+        }
+      ]
+    },
+    {
+      "_comment":"This is the HR Admin role who sees dashboards related to a HR Activities",
+      "roleId": 2080,
+      "roleName" : "HR",
+      "isSuper" : "",
+      "orgId": "",
+      "dashboards": [
+        {
+          "name": "Time Dashboard",
+          "id": "home",
+          "visibility" : [
+          {
+          	"key" : "bu", 
+          	"value" : ["General"],
+          	"respectRoleMapping" : false 
+          }]
+        },
+        {
+          "name": "Trainings Dashboard",
+          "id": "trainings"
+        },
+        {
+          "name": "Skills Dashboard",
+          "id": "skills"
+        },
+        {
+          "name": "Leaves Dashboard",
+          "id": "leave"
+        }
+      ]
+    },
+    {
+      "_comment":"This is the Digital Admin role who sees dashboards related to a Digital",
+      "roleId": 2072,
+      "roleName" : "Digital Admin",
+      "isSuper" : "",
+      "orgId": "",
+      "dashboards": [
+        {
+          "name": "Time Dashboard",
+          "id": "home",
+          "visibility" : [
+          {
+          	"key" : "bu", 
+          	"value" : ["Digital"],
+          	"respectRoleMapping" : false 
+          }]
+        },
+        {
+          "name": "Trainings Dashboard",
+          "id": "trainings"
+        },
+        {
+          "name": "Skills Dashboard",
+          "id": "skills"
+        }
+      ]
+    },
+    {
+      "_comment":"This is the IBU role who sees only the IBU dashboards",
+      "roleId": 2074,
+      "roleName" : "IBU",
+      "isSuper" : "",
+      "orgId": "",
+      "dashboards": [
+        {
+          "name": "IBU Dashboard",
+          "id": "ibudashboards"
+        }
+      ]
+    },
+    {
+      "_comment":"This is the Digital IBU role who sees the IBU dashboards with only Digital IBU data",
+      "roleId": 2082,
+      "roleName" : "Digital IBU",
+      "isSuper" : "",
+      "orgId": "",
+      "dashboards": [
+        {
+          "name": "IBU Dashboard",
+          "id": "ibudashboards",
+          "visibility" : [
+          {
+          	"key" : "bu", 
+          	"value" : ["Digital"],
+          	"respectRoleMapping" : false 
+          }]
+        },
+        {
+          "name": "Leaves Dashboard",
+          "id": "leave"
+        },
+        {
+          "name": "Skills Dashboard",
+          "id": "skills"
+        },
+        {
+          "name": "Expense Dashboard",
+          "id": "expensedashboards"
+        },
+        {
+          "name": "Trainings Dashboard",
+          "id": "trainings"
+        },
+        {
+          "name": "Awards Dashboard",
+          "id": "awardsdashboards"
+        }
+      ]
+    },
+    {
+      "_comment":"This is the NXT IBU role who sees only the IBU dashboards with only NXT IBU data",
+      "roleId": 2083,
+      "roleName" : "NXT IBU",
+      "isSuper" : "",
+      "orgId": "",
+      "dashboards": [
+        {
+          "name": "IBU Dashboard",
+          "id": "ibudashboards",
+          "visibility" : [
+          {
+          	"key" : "bu", 
+          	"value" : ["NXT"],
+          	"respectRoleMapping" : false 
+          }]
+        },
+        {
+          "name": "Leaves Dashboard",
+          "id": "leave"
+        },
+        {
+          "name": "Skills Dashboard",
+          "id": "skills"
+        },
+        {
+          "name": "Expense Dashboard",
+          "id": "expensedashboards"
+        },
+        {
+          "name": "Trainings Dashboard",
+          "id": "trainings"
+        },
+        {
+          "name": "Awards Dashboard",
+          "id": "awardsdashboards"
+        }
+      ]
+    },
+    {
+      "_comment":"This is the Enterprise IBU role who sees only the IBU dashboards with only Enterprise IBU data",
+      "roleId": 2084,
+      "roleName" : "Enterprise IBU",
+      "isSuper" : "",
+      "orgId": "",
+      "dashboards": [
+        {
+          "name": "IBU Dashboard",
+          "id": "ibudashboards",
+          "visibility" : [
+          {
+          	"key" : "bu", 
+          	"value" : ["Enterprise"],
+          	"respectRoleMapping" : false 
+          }]
+        }
+      ]
+    },
+     {
+      "_comment":"This is the MS Enterprise IBU role who sees only the IBU dashboards with only MS Enterprise IBU data",
+      "roleId": 2085,
+      "roleName" : "MS Enterprise IBU",
+      "isSuper" : "",
+      "orgId": "",
+      "dashboards": [
+        {
+          "name": "IBU Dashboard",
+          "id": "ibudashboards",
+          "visibility" : [
+          {
+          	"key" : "bu", 
+          	"value" : ["MS Enterprise"],
+          	"respectRoleMapping" : false 
+          }]
+        }
+      ]
+    },
+    {
+      "_comment":"This is the Sweden - Direct IBU role who sees only the IBU dashboards with only Sweden - Direct IBU data",
+      "roleId": 2086,
+      "roleName" : " Sweden - Direct IBU",
+      "isSuper" : "",
+      "orgId": "",
+      "dashboards": [
+        {
+          "name": "IBU Dashboard",
+          "id": "ibudashboards",
+          "visibility" : [
+          {
+          	"key" : "bu", 
+          	"value" : ["Sweden - Direct"],
+          	"respectRoleMapping" : false 
+          }]
+        }
+      ]
+    },
+    {
+      "_comment":"This is the Finland IBU role who sees only the IBU dashboards with only Finland IBU data ",
+      "roleId": 2087,
+      "roleName" : "Finland IBU",
+      "isSuper" : "",
+      "orgId": "",
+      "dashboards": [
+        {
+          "name": "IBU Dashboard",
+          "id": "ibudashboards",
+          "visibility" : [
+          {
+          	"key" : "bu", 
+          	"value" : ["Finland"],
+          	"respectRoleMapping" : false 
+          }]
+        }
+      ]
+    },
+    {
+      "_comment":"",
+      "roleId": 2073,
+      "roleName" : "Management",
+      "isSuper" : "",
+      "orgId": "",
+      "dashboards": [
+        {
+          "name": "Leaves Dashboard",
+          "id": "leave"
+        },
+        {
+          "name": "Revenue Dashboard",
+          "id": "revenue"
+        },
+        {
+          "name":"IBU Dashboard",
+          "id":"ibudashboards"
+        },
+        {
+          "name": "Trainings Dashboard",
+          "id": "trainings"
+        },
+        {
+          "name": "Skills Dashboard",
+          "id": "skills"
+        },
+        {
+          "name": "Awards Dashboard",
+          "id": "awardsdashboards"
+        },
+        {
+          "name": "Expense Dashboard",
+          "id": "expensedashboards"
+        }
+      ]
+    },
+    {
+      "_comment":"",
+      "roleId": 2075,
+      "roleName" : "FINANCE",
+      "isSuper" : "",
+      "orgId": "",
+      "dashboards": [
+      	{
+          "name": "MIS Summary Dashboard",
+          "id": "missummarydashboard"
+        },
+        {
+          "name": "MIS IBU Dashboard",
+          "id": "ibumisdashboard"
+        },
+        {
+          "name": "Revenue Dashboard",
+          "id": "revenue"
+        },
+        {
+          "name": "Expense Dashboard",
+          "id": "expensedashboards"
+        },
+        {
+          "name": "Sales Dashboards",
+          "id": "salesdashboards"
+        }
+      ]
+    },
+    {
+      "_comment":"",
+      "roleId": 2076,
+      "roleName" : "Sales",
+      "isSuper" : "",
+      "orgId": "",
+      "dashboards": [
+        {
+          "name": "Sales Dashboards",
+          "id": "salesdashboards"
+        }
+      ]
+    },
+    {
+      "_comment":"",
+      "roleId": 2077,
+      "roleName" : "People",
+      "isSuper" : "",
+      "orgId": "",
+      "dashboards": [
+        {
+          "name": "Time Dashboard",
+          "id": "home"
+        },
+        {
+          "name": "Leaves Dashboard",
+          "id": "leave"
+        }
+      ]
+    },
+    {
+      "_comment":"",
+      "roleId": 2078,
+      "roleName" : "Projects",
+      "isSuper" : "",
+      "orgId": "",
+      "dashboards": [
+      	{
+          "name": "Time Dashboard",
+          "id": "home"
+        },
+        {
+          "name": "Leaves Dashboard",
+          "id": "leave"
+        },
+        {
+          "name": "Trainings Dashboard",
+          "id": "trainings"
+        },
+        {
+          "name": "Skills Dashboard",
+          "id": "skills"
+        }
+      ]
+    },
+    {
+      "_comment":" ",
+      "roleId": 2079,
+      "roleName" : "Recruitment",
+      "isSuper" : "",
+      "orgId": "",
+      "dashboards": [
+      	{
+          "name": "Skills Dashboard",
+          "id": "skills"
+        }
+      ]
+    },
+    {
+      "_comment":" ",
+      "roleId": 2081,
+      "roleName" : "Netops",
+      "isSuper" : "",
+      "orgId": "",
+      "dashboards": [
+      	
+      ]
+    }
+    
+  ]
+}

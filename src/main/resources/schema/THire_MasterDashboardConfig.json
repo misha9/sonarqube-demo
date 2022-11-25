@@ -1,0 +1,59 @@
+{
+  "_comment": "Master dashboard which holds all the possible visualisation. Note new dashboards/visualisations can be added",
+  "dashboards": [
+    {
+      "name": "Aurora Desk Dashboards",
+      "id": "TH",
+      "isActive": "",
+      "style": "tabbed",
+      "visualizations": [
+        {
+          "row": 3,
+          "name": "Performance Desk",
+          "vizArray": [
+            {
+              "id": 123,
+              "name": "Interview Department Share",
+              "dimensions": {
+                "height": 250,
+                "width": 4
+              },
+              "vizType": "chart",
+              "noUnit": true,
+              "charts": [
+                {
+                  "id": "interviewDepartmentShare",
+                  "name": "Interview Department Share",
+                  "code": "",
+                  "chartType": "pie",
+                  "filter": "",
+                  "headers": []
+                }
+              ]
+            },
+            {
+              "id": 123,
+              "name": "Interview Department Share",
+              "dimensions": {
+                "height": 250,
+                "width": 4
+              },
+              "vizType": "chart",
+              "noUnit": true,
+              "charts": [
+                {
+                  "id": "interviewDepartmentShare",
+                  "name": "Interview Department Share",
+                  "code": "",
+                  "chartType": "pie",
+                  "filter": "",
+                  "headers": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

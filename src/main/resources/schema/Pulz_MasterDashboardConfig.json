@@ -1,0 +1,153 @@
+{
+  "_comment": "Master dashboard which holds all the possible visualisation. Note new dashboards/visualisations can be added",
+  "dashboards": [
+    {
+      "name": "Pulz Dashboards",
+      "id": "home",
+      "isActive": "",
+      "style": "tabbed",
+      "widgetCharts": [
+        {
+          "id": "averageRating",
+          "name": "Average Rating",
+          "code": "",
+          "chartType": "metric",
+          "filter": "",
+          "headers": []
+        },
+        {
+          "id": "totalRatingsReceived",
+          "name": "Total Ratings Received",
+          "code": "",
+          "chartType": "metric",
+          "filter": "",
+          "headers": []
+        },
+        {
+          "id": "totalStoreCount",
+          "name": "Total Store Count",
+          "code": "",
+          "chartType": "metric",
+          "filter": "",
+          "headers": []
+        }
+      ],
+      "visualizations": [
+        {
+          "row": 1,
+          "name": "Performance Desk",
+          "vizArray": [
+            {
+              "id": 11,
+              "name": "Rating Share",
+              "dimensions": {
+                "height": 250,
+                "width": 4
+              },
+              "vizType": "chart",
+              "noUnit": true,
+              "charts": [
+                {
+                  "id": "ratingShare",
+                  "name": "Rating Share",
+                  "code": "",
+                  "chartType": "pie",
+                  "filter": "",
+                  "headers": []
+                }
+              ]
+            },
+            {
+              "id": 12,
+              "name": "Reason Share",
+              "dimensions": {
+                "height": 250,
+                "width": 4
+              },
+              "vizType": "chart",
+              "noUnit": true,
+              "charts": [
+                {
+                  "id": "reasonShare",
+                  "name": "Reason Share",
+                  "code": "",
+                  "chartType": "horizontalbar",
+                  "filter": "",
+                  "headers": []
+                }
+              ]
+            },
+            {
+              "id": 13,
+              "name": "Rating Split Trend",
+              "dimensions": {
+                "height": 250,
+                "width": 4
+              },
+              "vizType": "chart",
+              "isCollapsible": false,
+              "label": "",
+              "charts": [
+                {
+                  "id": "ratingSplitTrend",
+                  "name": "Daily",
+                  "code": "",
+                  "chartType": "line",
+                  "filter": "",
+                  "headers": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "row": 2,
+          "name": "Performance Desk",
+          "vizArray": [
+            {
+              "id": 21,
+              "name": "Gender Share",
+              "dimensions": {
+                "height": 250,
+                "width": 4
+              },
+              "vizType": "chart",
+              "noUnit": true,
+              "charts": [
+                {
+                  "id": "genderShare",
+                  "name": "Gender Share",
+                  "code": "",
+                  "chartType": "donut",
+                  "filter": "",
+                  "headers": []
+                }
+              ]
+            },
+            {
+              "id": 13,
+              "name": "Reasons Gender Share",
+              "dimensions": {
+                "height": 250,
+                "width": 7
+              },
+              "vizType": "chart",
+              "isCollapsible": false,
+              "label": "",
+              "charts": [
+                {
+                  "id": "reasonsGenderShare",
+                  "name": "Reasons Gender Share",
+                  "code": "",
+                  "chartType": "multibar",
+                  "filter": "",
+                  "headers": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

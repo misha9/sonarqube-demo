@@ -1,0 +1,105 @@
+{
+  "_comment": "Master dashboard which holds all the possible visualisation. Note new dashboards/visualisations can be added",
+  "dashboards": [
+    {
+      "name": "Thor AI Dashboards",
+      "id": "home",
+      "isActive": "",
+      "style": "tabbed",
+      "widgetCharts": [
+        {
+          "id": "thorIntentCount",
+          "name": "Intent Count",
+          "code": "",
+          "chartType": "metric",
+          "filter": "",
+          "headers": []
+        },
+        {
+          "id": "confidenceLevel",
+          "name": "Confidence Level",
+          "code": "",
+          "chartType": "metric",
+          "filter": "",
+          "headers": []
+        },
+        {
+          "id": "totalConversationCount",
+          "name": "Total Conversation Count",
+          "code": "",
+          "chartType": "metric",
+          "filter": "",
+          "headers": []
+        }
+      ],
+      "visualizations": [
+        {
+          "row": 1,
+          "name": "Performance Desk",
+          "vizArray": [
+            {
+              "id": 11,
+              "name": "Intent Share",
+              "dimensions": {
+                "height": 600,
+                "width": 4
+              },
+              "vizType": "chart",
+              "noUnit": true,
+              "charts": [
+                {
+                  "id": "thorIntentShare",
+                  "name": "Intent Share",
+                  "code": "",
+                  "chartType": "horizontalbar",
+                  "filter": "",
+                  "headers": []
+                }
+              ]
+            },
+            {
+              "id": 12,
+              "name": "User Bot Conversation Relay",
+              "dimensions": {
+                "height": 600,
+                "width": 4
+              },
+              "vizType": "chart",
+              "noUnit": true,
+              "charts": [
+                {
+                  "id": "userBotConversationRelay",
+                  "name": "User Bot Conversation Relay",
+                  "code": "",
+                  "chartType": "pie",
+                  "filter": "",
+                  "headers": []
+                }
+              ]
+            },
+            {
+              "id": 13,
+              "name": "Interaction Trend",
+              "dimensions": {
+                "height": 600,
+                "width": 4
+              },
+              "vizType": "chart",
+              "noUnit": true,
+              "charts": [
+                {
+                  "id": "interactionTrend",
+                  "name": "Interaction Trend",
+                  "code": "",
+                  "chartType": "line",
+                  "filter": "",
+                  "headers": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

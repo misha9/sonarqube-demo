@@ -1,0 +1,3060 @@
+{
+  "_comment": "Master dashboard which holds all the possible visualisation. Note new dashboards/visualisations can be added",
+  "dashboards": [
+    {
+      "name": "Kronos Dashboards",
+      "id": "home",
+      "isActive": "",
+      "style": "tabbed",
+      "filters": [
+        {
+          "name": "Business Unit",
+          "id": 1,
+          "key": "bu",
+          "values": [
+            "All",
+            "Enterprise",
+            "External",
+            "General",
+            "Digital",
+            "NXT",
+            "MS Enterprise"
+          ]
+        }
+      ],
+      "widgetCharts": [
+        {
+          "id": "totalHoursLogged",
+          "name": "Total Hours Logged",
+          "code": "",
+          "chartType": "metric",
+          "order": 1,
+          "filter": "",
+          "headers": []
+        },
+        {
+          "id": "totalProjectHours",
+          "name": "Total Project Hours",
+          "code": "",
+          "chartType": "metric",
+          "order": 2,
+          "filter": "",
+          "headers": []
+        },
+        {
+          "id": "totalTrainingHours",
+          "name": "Total Training Hours",
+          "code": "",
+          "chartType": "metric",
+          "order": 3,
+          "filter": "",
+          "headers": []
+        },
+        {
+          "id": "totalGeneralHours",
+          "name": "Total General Hours",
+          "code": "",
+          "chartType": "metric",
+          "order": 4,
+          "filter": "",
+          "headers": []
+        },
+        {
+          "id": "totalBenchHours",
+          "name": "Total Bench Hours",
+          "code": "",
+          "chartType": "metric",
+          "order": 5,
+          "filter": "",
+          "headers": []
+        },
+        {
+          "id": "totalRecruitmentHours",
+          "name": "Total Recruitment Hours",
+          "code": "",
+          "chartType": "metric",
+          "order": 6,
+          "filter": "",
+          "headers": []
+        }
+      ],
+      "visualizations": [
+        {
+          "row": 1,
+          "name": "Time Report Desk",
+          "vizArray": [
+            {
+              "id": 111,
+              "name": "Overview",
+              "dimensions": {
+                "height": 250,
+                "width": 4
+              },
+              "vizType": "metriccollection",
+              "noUnit": true,
+              "isCollapsible": false,
+              "charts": [
+                {
+                  "id": "nonProjectHours",
+                  "name": "Non Project Hours Insights",
+                  "code": "",
+                  "chartType": "metriccollection",
+                  "filter": "",
+                  "headers": []
+                }
+              ]
+            },
+            {
+              "id": 12,
+              "name": "Focus Hours for BU",
+              "dimensions": {
+                "height": 250,
+                "width": 8
+              },
+              "vizType": "chart",
+              "noUnit": true,
+              "charts": [
+                {
+                  "id": "focusHoursForBU",
+                  "name": "Focus Hours for BU",
+                  "code": "",
+                  "chartType": "table",
+                  "filter": "",
+                  "headers": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "row": 2,
+          "name": "Performance Desk",
+          "vizArray": [
+            {
+              "id": 11,
+              "name": "Time Share Per Business Unit",
+              "dimensions": {
+                "height": 250,
+                "width": 4
+              },
+              "vizType": "chart",
+              "noUnit": true,
+              "charts": [
+                {
+                  "id": "timeSharePerBU",
+                  "name": "Time Share Per Business Unit",
+                  "code": "",
+                  "chartType": "horizontalbar",
+                  "filter": "",
+                  "headers": []
+                }
+              ]
+            },
+            {
+              "id": 11,
+              "name": "Report Submission Trend",
+              "dimensions": {
+                "height": 250,
+                "width": 8
+              },
+              "vizType": "chart",
+              "noUnit": true,
+              "charts": [
+                {
+                  "id": "timeReportSubmissionTrend",
+                  "name": "Report Submission Trend",
+                  "code": "",
+                  "chartType": "calendarheatmap",
+                  "filter": "",
+                  "headers": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "row": 3,
+          "name": "Time BU Charts",
+          "vizArray": [
+            {
+              "id": 12,
+              "name": "Business Unit Time Entries",
+              "dimensions": {
+                "height": 250,
+                "width": 6
+              },
+              "vizType": "chart",
+              "noUnit": true,
+              "charts": [
+                {
+                  "id": "buTimeEntries",
+                  "name": "Business Unit Time Entries",
+                  "code": "",
+                  "chartType": "polararea",
+                  "filter": "",
+                  "headers": []
+                }
+              ]
+            },
+            {
+              "id": 12,
+              "name": "Non Compliance",
+              "dimensions": {
+                "height": 250,
+                "width": 6
+              },
+              "vizType": "chart",
+              "noUnit": true,
+              "charts": [
+                {
+                  "id": "timeReportNonCompliance",
+                  "name": "Non Compliance",
+                  "code": "",
+                  "chartType": "bar",
+                  "filter": "bu",
+                  "headers": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "row": 4,
+          "name": "Time BU Charts",
+          "vizArray": [
+            {
+              "id": 12,
+              "name": "NXT in Non-NXT Projects",
+              "dimensions": {
+                "height": 250,
+                "width": 6
+              },
+              "vizType": "chart",
+              "noUnit": true,
+              "charts": [
+                {
+                  "id": "nxtInNonNXTProjects",
+                  "name": "NXT in Non-NXT Projects",
+                  "code": "",
+                  "chartType": "bar",
+                  "filter": "bu",
+                  "headers": []
+                }
+              ]
+            },
+            {
+              "id": 111,
+              "name": "Digital in Non-Digital Projects",
+              "dimensions": {
+                "height": 250,
+                "width": 6
+              },
+              "vizType": "chart",
+              "noUnit": true,
+              "isCollapsible": false,
+              "charts": [
+                {
+                  "id": "digitalInNonDigitalProjects",
+                  "name": "Digital in Non-Digital Projects",
+                  "code": "",
+                  "chartType": "bar",
+                  "filter": "",
+                  "headers": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "row": 5,
+          "name": "Time BU Charts",
+          "vizArray": [
+            {
+              "id": 12,
+              "name": "MS Enterprise in Non-MS Enterprise Projects",
+              "dimensions": {
+                "height": 250,
+                "width": 4
+              },
+              "vizType": "chart",
+              "noUnit": true,
+              "charts": [
+                {
+                  "id": "mseInNonMseProjects",
+                  "name": "MS Enterprise in MS Enterprise Projects",
+                  "code": "",
+                  "chartType": "bar",
+                  "filter": "",
+                  "headers": []
+                }
+              ]
+            },
+            {
+              "id": 111,
+              "name": "Enterprise in Non-Enterprise Projects",
+              "dimensions": {
+                "height": 250,
+                "width": 4
+              },
+              "vizType": "chart",
+              "noUnit": true,
+              "isCollapsible": false,
+              "charts": [
+                {
+                  "id": "enterpriseInNonEnterpriseProjects",
+                  "name": "Enterprise in Non-Enterprise Projects",
+                  "code": "",
+                  "chartType": "bar",
+                  "filter": "",
+                  "headers": []
+                }
+              ]
+            },
+            {
+              "id": 111,
+              "name": "Thor Events",
+              "dimensions": {
+                "height": 250,
+                "width": 4
+              },
+              "vizType": "chart",
+              "noUnit": true,
+              "isCollapsible": false,
+              "charts": [
+                {
+                  "id": "thorEvents",
+                  "name": "Thor Events",
+                  "code": "",
+                  "chartType": "horizontalbar",
+                  "filter": "",
+                  "headers": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Kronos Dashboards",
+      "id": "revenue",
+      "isActive": "",
+      "style": "tabbed",
+      "filters": [
+        {
+          "name": "Business Unit",
+          "id": 1,
+          "key": "bu",
+          "values": [
+            "All",
+            "Digital",
+            "NXT",
+            "Enterprise",
+            "External",
+            "General",
+            "MS Enterprise"
+          ]
+        }
+      ],
+      "widgetCharts": [
+        {
+          "id": "ytdActualGm3",
+          "name": "YTD GM3 (Actual)",
+          "code": "",
+          "chartType": "metric",
+          "order": 1,
+          "filter": "",
+          "headers": []
+        },
+        {
+          "id": "ytdTargetGM3",
+          "name": "YTD GM3 (Target)",
+          "code": "",
+          "chartType": "metric",
+          "order": 2,
+          "filter": "",
+          "headers": []
+        },
+        {
+          "id": "ytdTargetRevenue",
+          "name": "YTD Rev (Target)",
+          "code": "",
+          "chartType": "metric",
+          "order": 3,
+          "filter": "",
+          "headers": []
+        },
+        {
+          "id": "ytdActualRevenue",
+          "name": "YTD Rev (Actual)",
+          "code": "",
+          "chartType": "metric",
+          "order": 4,
+          "filter": "",
+          "headers": []
+        }
+      ],
+      "visualizations": [
+        {
+          "row": 1,
+          "name": "Performance Desk",
+          "vizArray": [
+            {
+              "id": 11,
+              "name": "Revenue Trends Actual VS Target",
+              "dimensions": {
+                "height": 250,
+                "width": 6
+              },
+              "vizType": "chart",
+              "noUnit": true,
+              "charts": [
+                {
+                  "id": "targetActualRevenueTrend",
+                  "name": "Revenue Trends Actual VS Target",
+                  "code": "",
+                  "chartType": "line",
+                  "filter": "",
+                  "headers": []
+                }
+              ]
+            },
+            {
+              "id": 12,
+              "name": "GM3 Trends Actual VS Target",
+              "dimensions": {
+                "height": 250,
+                "width": 6
+              },
+              "vizType": "chart",
+              "noUnit": true,
+              "charts": [
+                {
+                  "id": "targetActualGm3Trend",
+                  "name": "GM3 Trends Actual VS Target",
+                  "code": "",
+                  "chartType": "line",
+                  "filter": "",
+                  "headers": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "row": 2,
+          "name": "Performance Desk",
+          "vizArray": [
+            {
+              "id": 11,
+              "name": "Actual Revenue & GM3",
+              "dimensions": {
+                "height": 250,
+                "width": 4
+              },
+              "vizType": "chart",
+              "noUnit": true,
+              "charts": [
+                {
+                  "id": "actualRevenueAndGM3Mixed",
+                  "name": "Actual Revenue & GM3",
+                  "code": "",
+                  "chartType": "mixed",
+                  "filter": "",
+                  "headers": []
+                }
+              ]
+            },
+            {
+              "id": 21,
+              "name": "Revenue & GM3 - Actual",
+              "dimensions": {
+                "height": 250,
+                "width": 4
+              },
+              "vizType": "chart",
+              "noUnit": true,
+              "charts": [
+                {
+                  "id": "actualRevenueAndGM3",
+                  "name": "Revenue & GM3 - Actual",
+                  "code": "",
+                  "chartType": "multibar",
+                  "filter": "",
+                  "headers": []
+                }
+              ]
+            },
+            {
+              "id": 11,
+              "name": "Revenue Growth (Cumulative)",
+              "dimensions": {
+                "height": 250,
+                "width": 4
+              },
+              "vizType": "chart",
+              "noUnit": true,
+              "charts": [
+                {
+                  "id": "cumulativeRevenueGrowth",
+                  "name": "Revenue Growth (Cumulative)",
+                  "code": "",
+                  "chartType": "line",
+                  "filter": "",
+                  "headers": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "row": 3,
+          "name": "Performance Desk",
+          "vizArray": []
+        },
+        {
+          "row": 5,
+          "name": "Projects Wrt Weighted Value",
+          "vizArray": [
+            {
+              "id": 11,
+              "name": "Revenue Existing Vs New - SWEDEN",
+              "dimensions": {
+                "height": 250,
+                "width": 4
+              },
+              "vizType": "chart",
+              "noUnit": true,
+              "charts": [
+                {
+                  "id": "swedenExistingVsNew",
+                  "name": "Revenue Existing Vs New - SWEDEN",
+                  "code": "",
+                  "chartType": "stackedbar",
+                  "filter": "",
+                  "headers": []
+                }
+              ]
+            },
+            {
+              "id": 11,
+              "name": "Revenue Existing Vs New - INDIA",
+              "dimensions": {
+                "height": 250,
+                "width": 4
+              },
+              "vizType": "chart",
+              "noUnit": true,
+              "charts": [
+                {
+                  "id": "indiaExistingVsNew",
+                  "name": "Revenue Existing Vs New - INDIA",
+                  "code": "",
+                  "chartType": "stackedbar",
+                  "filter": "",
+                  "headers": []
+                }
+              ]
+            },
+            {
+              "id": 12,
+              "name": "Revenue Projections",
+              "dimensions": {
+                "height": 250,
+                "width": 4
+              },
+              "vizType": "chart",
+              "noUnit": true,
+              "charts": [
+                {
+                  "id": "revenueProjections",
+                  "name": "Revenue Projections",
+                  "code": "",
+                  "chartType": "line",
+                  "filter": "",
+                  "headers": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "IBU Dashboards",
+      "id": "ibudashboards",
+      "isActive": "",
+      "style": "tabbed",
+      "filters": [],
+      "widgetCharts": [
+        {
+          "id": "totalAccountsCount",
+          "name": "Total Accounts",
+          "code": "",
+          "chartType": "metric",
+          "order": 1,
+          "filter": "",
+          "headers": []
+        },
+        {
+          "id": "totalProjectsCount",
+          "name": "Total Projects",
+          "code": "",
+          "chartType": "metric",
+          "order": 2,
+          "filter": "",
+          "headers": []
+        },
+        {
+          "id": "totalPeopleCount",
+          "name": "Total People",
+          "code": "",
+          "chartType": "metric",
+          "order": 3,
+          "filter": "",
+          "headers": []
+        },
+        {
+          "id": "ytdActualGm3",
+          "name": "YTD GM3 (Actual)",
+          "code": "",
+          "chartType": "metric",
+          "order": 4,
+          "filter": "",
+          "headers": []
+        },
+        {
+          "id": "ytdTargetGM3",
+          "name": "YTD GM3 (Target)",
+          "code": "",
+          "chartType": "metric",
+          "order": 5,
+          "filter": "",
+          "headers": []
+        },
+        {
+          "id": "ytdTargetRevenue",
+          "name": "YTD Rev (Target)",
+          "code": "",
+          "chartType": "metric",
+          "order": 6,
+          "filter": "",
+          "headers": []
+        },
+        {
+          "id": "ytdActualRevenue",
+          "name": "YTD Rev (Actual)",
+          "code": "",
+          "chartType": "metric",
+          "order": 7,
+          "filter": "",
+          "headers": []
+        }
+      ],
+      "visualizations": [
+        {
+          "row": 1,
+          "name": "Performance Desk",
+          "vizArray": [
+            {
+              "id": 21,
+              "name": "Projects",
+              "dimensions": {
+                "height": 250,
+                "width": 4
+              },
+              "vizType": "chart",
+              "noUnit": true,
+              "charts": [
+                {
+                  "id": "projects",
+                  "name": "Projects",
+                  "code": "",
+                  "chartType": "bar",
+                  "filter": "",
+                  "headers": []
+                }
+              ]
+            },
+            {
+              "id": 21,
+              "name": "Accounts",
+              "dimensions": {
+                "height": 250,
+                "width": 4
+              },
+              "vizType": "chart",
+              "noUnit": true,
+              "charts": [
+                {
+                  "id": "accounts",
+                  "name": "Accounts",
+                  "code": "",
+                  "chartType": "bar",
+                  "filter": "",
+                  "headers": []
+                }
+              ]
+            },
+            {
+              "id": 21,
+              "name": "Peoples",
+              "dimensions": {
+                "height": 250,
+                "width": 4
+              },
+              "vizType": "chart",
+              "noUnit": true,
+              "charts": [
+                {
+                  "id": "peoples",
+                  "name": "Peoples",
+                  "code": "",
+                  "chartType": "bar",
+                  "filter": "",
+                  "headers": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "row": 2,
+          "name": "Performance Desk",
+          "vizArray": [
+            {
+              "id": 11,
+              "name": "Revenue Trends Actual VS Target",
+              "dimensions": {
+                "height": 250,
+                "width": 6
+              },
+              "vizType": "chart",
+              "noUnit": true,
+              "charts": [
+                {
+                  "id": "targetActualRevenueTrend",
+                  "name": "Revenue Trends Actual VS Target",
+                  "code": "",
+                  "chartType": "line",
+                  "filter": "",
+                  "headers": []
+                }
+              ]
+            },
+            {
+              "id": 12,
+              "name": "GM3 Trends Actual VS Target",
+              "dimensions": {
+                "height": 250,
+                "width": 6
+              },
+              "vizType": "chart",
+              "noUnit": true,
+              "charts": [
+                {
+                  "id": "targetActualGm3Trend",
+                  "name": "GM3 Trends Actual VS Target",
+                  "code": "",
+                  "chartType": "line",
+                  "filter": "",
+                  "headers": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "row": 3,
+          "name": "Performance Desk",
+          "vizArray": [
+            {
+              "id": 11,
+              "name": "Revenue & GM3 - Actual",
+              "dimensions": {
+                "height": 250,
+                "width": 4
+              },
+              "vizType": "chart",
+              "noUnit": true,
+              "charts": [
+                {
+                  "id": "actualRevenueAndGM3Mixed",
+                  "name": "Actual Revenue & GM3",
+                  "code": "",
+                  "chartType": "mixed",
+                  "filter": "",
+                  "headers": []
+                }
+              ]
+            },
+            {
+              "id": 21,
+              "name": "Revenue & GM3 - Actual",
+              "dimensions": {
+                "height": 250,
+                "width": 4
+              },
+              "vizType": "chart",
+              "noUnit": true,
+              "charts": [
+                {
+                  "id": "actualRevenueAndGM3",
+                  "name": "Revenue & GM3 - Actual",
+                  "code": "",
+                  "chartType": "multibar",
+                  "filter": "",
+                  "headers": []
+                }
+              ]
+            },
+            {
+              "id": 11,
+              "name": "Team Growth",
+              "dimensions": {
+                "height": 250,
+                "width": 4
+              },
+              "vizType": "chart",
+              "noUnit": true,
+              "charts": [
+                {
+                  "id": "teamGrowth",
+                  "name": "Team Growth",
+                  "code": "",
+                  "chartType": "stackedbar",
+                  "filter": "",
+                  "headers": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "row": 4,
+          "name": "Performance Desk",
+          "vizArray": [
+            {
+              "id": 11,
+              "name": "Revenue Growth (Cumulative)",
+              "dimensions": {
+                "height": 250,
+                "width": 4
+              },
+              "vizType": "chart",
+              "noUnit": true,
+              "charts": [
+                {
+                  "id": "cumulativeRevenueGrowth",
+                  "name": "Revenue Growth (Cumulative)",
+                  "code": "",
+                  "chartType": "line",
+                  "filter": "",
+                  "headers": []
+                }
+              ]
+            },
+            {
+              "id": 12,
+              "name": "Revenue Projections",
+              "dimensions": {
+                "height": 250,
+                "width": 4
+              },
+              "vizType": "chart",
+              "noUnit": true,
+              "charts": [
+                {
+                  "id": "revenueProjections",
+                  "name": "Revenue Projections",
+                  "code": "",
+                  "chartType": "line",
+                  "filter": "",
+                  "headers": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Trainings Dashboard",
+      "id": "trainings",
+      "isActive": "",
+      "style": "tabbed",
+      "filters": [
+        {
+          "name": "Business Unit",
+          "id": 1,
+          "key": "bu",
+          "values": [
+            "Enterprise",
+            "External",
+            "General",
+            "Digital",
+            "NXT",
+            "MS Enterprise"
+          ]
+        }
+      ],
+      "widgetCharts": [
+        {
+          "id": "totalTrainingsCount",
+          "name": "Total Trainings Count",
+          "code": "",
+          "chartType": "metric",
+          "order": 1,
+          "filter": "",
+          "headers": []
+        },
+        {
+          "id": "totalTrainersCount",
+          "name": "Total Trainers Count",
+          "code": "",
+          "chartType": "metric",
+          "order": 2,
+          "filter": "",
+          "headers": []
+        },
+        {
+          "id": "totalTrainingDuration",
+          "name": "Total Training Duration",
+          "code": "",
+          "chartType": "metric",
+          "order": 3,
+          "filter": "",
+          "headers": []
+        }
+      ],
+      "visualizations": [
+        {
+          "row": 1,
+          "name": "Trainings Desk",
+          "vizArray": [
+            {
+              "id": 11,
+              "name": "Trainings Per Business Unit",
+              "dimensions": {
+                "height": 250,
+                "width": 4
+              },
+              "vizType": "chart",
+              "noUnit": true,
+              "charts": [
+                {
+                  "id": "trainingsPerBu",
+                  "name": "Trainings Per Business Unit",
+                  "code": "",
+                  "chartType": "horizontalbar",
+                  "filter": "",
+                  "headers": []
+                }
+              ]
+            },
+            {
+              "id": 12,
+              "name": "Training Type Share",
+              "dimensions": {
+                "height": 250,
+                "width": 4
+              },
+              "vizType": "chart",
+              "noUnit": true,
+              "charts": [
+                {
+                  "id": "trainingTypeShare",
+                  "name": "Training Type Share",
+                  "code": "",
+                  "chartType": "donut",
+                  "filter": "",
+                  "headers": []
+                }
+              ]
+            },
+            {
+              "id": 12,
+              "name": "Modes of Training",
+              "dimensions": {
+                "height": 250,
+                "width": 4
+              },
+              "vizType": "chart",
+              "noUnit": true,
+              "charts": [
+                {
+                  "id": "trainingMode",
+                  "name": "Modes of Training",
+                  "code": "",
+                  "chartType": "pie",
+                  "filter": "",
+                  "headers": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "row": 2,
+          "name": "Trend of Trainings",
+          "vizArray": [
+            {
+              "id": 21,
+              "name": "Training Trend",
+              "dimensions": {
+                "height": 250,
+                "width": 8
+              },
+              "vizType": "chart",
+              "noUnit": true,
+              "charts": [
+                {
+                  "id": "trainingTrend",
+                  "name": "Training Trend",
+                  "code": "",
+                  "chartType": "stackedbar",
+                  "filter": "",
+                  "headers": []
+                }
+              ]
+            },
+            {
+              "id": 12,
+              "name": "Training Rating BU Wise",
+              "dimensions": {
+                "height": 250,
+                "width": 4
+              },
+              "vizType": "chart",
+              "noUnit": true,
+              "charts": [
+                {
+                  "id": "trainingRatingBuWise",
+                  "name": "Training Rating BU Wise",
+                  "code": "",
+                  "chartType": "bar",
+                  "filter": "bu",
+                  "headers": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "row": 3,
+          "name": "Trend of Trainings",
+          "vizArray": [
+            {
+              "id": 21,
+              "name": "Training Count Attendees and Rating",
+              "dimensions": {
+                "height": 250,
+                "width": 8
+              },
+              "vizType": "chart",
+              "noUnit": true,
+              "charts": [
+                {
+                  "id": "trainingCountRatingWeight",
+                  "name": "Training Count Attendees and Rating",
+                  "code": "",
+                  "chartType": "bubblechart",
+                  "filter": "",
+                  "headers": []
+                }
+              ]
+            },
+            {
+              "id": 12,
+              "name": "Top 10 Trainers",
+              "dimensions": {
+                "height": 250,
+                "width": 4
+              },
+              "vizType": "chart",
+              "noUnit": true,
+              "charts": [
+                {
+                  "id": "top10Trainers",
+                  "name": "Top 10 Trainers",
+                  "code": "",
+                  "chartType": "horizontalbar",
+                  "filter": "",
+                  "headers": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "row": 4,
+          "name": "Trend of Trainings",
+          "vizArray": [
+            {
+              "id": 21,
+              "name": "Team Leaderboard for Trainings",
+              "dimensions": {
+                "height": 250,
+                "width": 8
+              },
+              "vizType": "chart",
+              "noUnit": true,
+              "charts": [
+                {
+                  "id": "teamLeaderboardForTrainings",
+                  "name": "Team Leaderboard for Trainings",
+                  "code": "",
+                  "chartType": "bar",
+                  "filter": "",
+                  "headers": []
+                }
+              ]
+            },
+            {
+              "id": 21,
+              "name": "Top 10 Training Attendees",
+              "dimensions": {
+                "height": 250,
+                "width": 4
+              },
+              "vizType": "chart",
+              "noUnit": true,
+              "charts": [
+                {
+                  "id": "top10TrainingAttendees",
+                  "name": "Top 10 Training Attendess",
+                  "code": "",
+                  "chartType": "horizontalbar",
+                  "filter": "",
+                  "headers": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Skills Dashboard",
+      "id": "skills",
+      "isActive": "",
+      "style": "tabbed",
+      "filters": [
+        {
+          "name": "Business Unit",
+          "id": 1,
+          "key": "bu",
+          "values": [
+            "All Units",
+            "Enterprise",
+            "External",
+            "General",
+            "Digital",
+            "NXT",
+            "MS Enterprise"
+          ]
+        },
+        {
+          "name": "Country",
+          "id": 2,
+          "key": "country",
+          "values": [
+            "All",
+            "India",
+            "Sweden",
+            "Finland",
+            "USA",
+            "Norway"
+          ]
+        }
+      ],
+      "widgetCharts": [
+        {
+          "id": "skillsUpdatedUsers",
+          "name": "Skills Updated Users Count",
+          "code": "",
+          "chartType": "metric",
+          "order": 1,
+          "filter": "",
+          "headers": []
+        }
+      ],
+      "visualizations": [
+        {
+          "row": 1,
+          "name": "Skills Desk",
+          "vizArray": [
+            {
+              "id": 11,
+              "name": "Top 5 Highly Skilled Employees",
+              "dimensions": {
+                "height": 250,
+                "width": 4
+              },
+              "vizType": "chart",
+              "noUnit": true,
+              "charts": [
+                {
+                  "id": "top5WithMostSkills",
+                  "name": "Top 5 Highly Skilled Employees",
+                  "code": "",
+                  "chartType": "horizontalbar",
+                  "filter": "username",
+                  "headers": []
+                }
+              ]
+            },
+            {
+              "id": 12,
+              "name": "Top 10 Skills by Users",
+              "dimensions": {
+                "height": 250,
+                "width": 4
+              },
+              "vizType": "chart",
+              "noUnit": true,
+              "charts": [
+                {
+                  "id": "top10SkillsAcrossOrg",
+                  "name": "Top 10 Skills by Users",
+                  "code": "",
+                  "chartType": "bar",
+                  "filter": "skillName",
+                  "headers": []
+                }
+              ]
+            },
+            {
+              "id": 12,
+              "name": "Top 10 Skills By Points",
+              "dimensions": {
+                "height": 250,
+                "width": 4
+              },
+              "vizType": "chart",
+              "noUnit": true,
+              "charts": [
+                {
+                  "id": "top10SkillsByPoints",
+                  "name": "Top 10 Skills By Points",
+                  "code": "",
+                  "chartType": "horizontalbar",
+                  "filter": "skillName",
+                  "headers": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "row": 2,
+          "name": "Skills Desk",
+          "vizArray": [
+            {
+              "id": 11,
+              "name": "Top 10 Skills with 5 Star Rating",
+              "dimensions": {
+                "height": 250,
+                "width": 4
+              },
+              "vizType": "chart",
+              "noUnit": true,
+              "charts": [
+                {
+                  "id": "skillsWith5StarRatings",
+                  "name": "Top 10 Skills with 5 Star Rating",
+                  "code": "",
+                  "chartType": "bar",
+                  "filter": "skillName",
+                  "headers": []
+                }
+              ]
+            },
+            {
+              "id": 12,
+              "name": "Top 10 Skills with 4 Star Ratings",
+              "dimensions": {
+                "height": 250,
+                "width": 4
+              },
+              "vizType": "chart",
+              "noUnit": true,
+              "charts": [
+                {
+                  "id": "skillsWith4StarRatings",
+                  "name": "Top 10 Skills with 4 Star Ratings",
+                  "code": "",
+                  "chartType": "bar",
+                  "filter": "skillName",
+                  "headers": []
+                }
+              ]
+            },
+            {
+              "id": 12,
+              "name": "Skills Update Timeline",
+              "dimensions": {
+                "height": 250,
+                "width": 4
+              },
+              "vizType": "chart",
+              "noUnit": true,
+              "charts": [
+                {
+                  "id": "skillsUpdateTrend",
+                  "name": "Skills Update Timeline",
+                  "code": "",
+                  "chartType": "line",
+                  "filter": "",
+                  "headers": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Awards Dashboards",
+      "id": "awardsdashboards",
+      "isActive": "",
+      "style": "tabbed",
+      "filters": [
+        {
+          "name": "Business Unit",
+          "id": 1,
+          "key": "bu",
+          "values": [
+            "All",
+            "ENTERPRISE",
+            "DIGITAL",
+            "NXT",
+            "HR"
+          ]
+        }
+      ],
+      "widgetCharts": [
+        {
+          "id": "totalAwards",
+          "name": "Total Awards",
+          "code": "",
+          "chartType": "metric",
+          "order": 3,
+          "filter": "",
+          "headers": []
+        },
+        {
+          "id": "totalReceiver",
+          "name": "Total Award Receivers",
+          "code": "",
+          "chartType": "metric",
+          "order": 2,
+          "filter": "",
+          "headers": []
+        },
+        {
+          "id": "totalIssuer",
+          "name": "Total Award Issuers",
+          "code": "",
+          "chartType": "metric",
+          "order": 1,
+          "filter": "",
+          "headers": []
+        }
+      ],
+      "visualizations": [
+        {
+          "row": 1,
+          "name": "Awards Desk",
+          "vizArray": [
+            {
+              "id": 11,
+              "name": "Awards By Unit",
+              "dimensions": {
+                "height": 250,
+                "width": 4
+              },
+              "vizType": "chart",
+              "noUnit": true,
+              "charts": [
+                {
+                  "id": "awardsByUnit",
+                  "name": "Awards By Unit",
+                  "code": "",
+                  "chartType": "pie",
+                  "filter": "",
+                  "headers": []
+                }
+              ]
+            },
+            {
+              "id": 11,
+              "name": "Top 5 Users with Maximum No of Awards",
+              "dimensions": {
+                "height": 250,
+                "width": 4
+              },
+              "vizType": "chart",
+              "noUnit": true,
+              "charts": [
+                {
+                  "id": "top5UserWithMaximumNoOfAwards",
+                  "name": "Top 5 Users with Maximum No of Awards",
+                  "code": "",
+                  "chartType": "horizontalbar",
+                  "filter": "",
+                  "headers": []
+                }
+              ]
+            },
+            {
+              "id": 11,
+              "name": "Top 5 Users - Issued Maximum Number of Awards",
+              "dimensions": {
+                "height": 250,
+                "width": 4
+              },
+              "vizType": "chart",
+              "noUnit": true,
+              "charts": [
+                {
+                  "id": "top5Issuer",
+                  "name": "Top 5 Users - Issued Maximum Number of Awards",
+                  "code": "",
+                  "chartType": "horizontalbar",
+                  "filter": "",
+                  "headers": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "row": 2,
+          "name": "Awards Desk",
+          "vizArray": [
+            {
+              "id": 13,
+              "name": "Top 5 Awards - Issued Maximum Number of Times",
+              "dimensions": {
+                "height": 250,
+                "width": 4
+              },
+              "vizType": "chart",
+              "noUnit": true,
+              "charts": [
+                {
+                  "id": "top5AwardsIssuedMaximumNoOfTimes",
+                  "name": "Top 5 Awards - Issued Maximum Number of Times",
+                  "code": "",
+                  "chartType": "bar",
+                  "filter": "",
+                  "headers": []
+                }
+              ]
+            },
+            {
+              "id": 11,
+              "name": "Awards Issued Timeline",
+              "dimensions": {
+                "height": 250,
+                "width": 4
+              },
+              "vizType": "chart",
+              "noUnit": true,
+              "charts": [
+                {
+                  "id": "awardsIssuedTimeline",
+                  "name": "Awards Issued Timeline",
+                  "code": "",
+                  "chartType": "line",
+                  "filter": "",
+                  "headers": []
+                }
+              ]
+            },
+            {
+              "id": 11,
+              "name": "Awards Issued by HR Team",
+              "dimensions": {
+                "height": 250,
+                "width": 4
+              },
+              "vizType": "chart",
+              "noUnit": true,
+              "charts": [
+                {
+                  "id": "awardsIssuedByHR",
+                  "name": "Awards Issued by HR Team",
+                  "code": "",
+                  "chartType": "pie",
+                  "filter": "",
+                  "headers": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "row": 3,
+          "name": "Awards Desk",
+          "vizArray": [
+            {
+              "id": 13,
+              "name": "Top 5 Users wrt Points",
+              "dimensions": {
+                "height": 250,
+                "width": 4
+              },
+              "vizType": "chart",
+              "noUnit": true,
+              "charts": [
+                {
+                  "id": "top5UsersWRTPoints",
+                  "name": "Top 5 Users wrt Points",
+                  "code": "",
+                  "chartType": "bar",
+                  "filter": "",
+                  "headers": []
+                }
+              ]
+            },
+            {
+              "id": 13,
+              "name": "Awards Trends of Each Unit",
+              "dimensions": {
+                "height": 250,
+                "width": 4
+              },
+              "vizType": "chart",
+              "noUnit": true,
+              "charts": [
+                {
+                  "id": "issuedAwardsTrendsEachUnit",
+                  "name": "Awards Trends of Each Unit",
+                  "code": "",
+                  "chartType": "line",
+                  "filter": "",
+                  "headers": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Sales Dashboards",
+      "id": "salesdashboards",
+      "isActive": "",
+      "style": "tabbed",
+      "filters": [],
+      "widgetCharts": [
+        {
+          "id": "totalOpenOpportunities",
+          "name": "Open Opportunities",
+          "code": "",
+          "chartType": "metric",
+          "order": 1,
+          "filter": "",
+          "headers": []
+        },
+        {
+          "id": "totalTarget",
+          "name": "Total Target",
+          "code": "",
+          "chartType": "metric",
+          "order": 2,
+          "filter": "",
+          "headers": []
+        },
+        {
+          "id": "totalWeightedValue",
+          "name": "Total Weighted Value",
+          "code": "",
+          "chartType": "metric",
+          "order": 3,
+          "filter": "",
+          "headers": []
+        }
+      ],
+      "visualizations": [
+        {
+          "row": 1,
+          "name": "Performance Desk",
+          "vizArray": [
+            {
+              "id": 11,
+              "name": "Opportunities",
+              "dimensions": {
+                "height": 250,
+                "width": 4
+              },
+              "vizType": "chart",
+              "noUnit": true,
+              "charts": [
+                {
+                  "id": "opportunities",
+                  "name": "Opportunities",
+                  "code": "",
+                  "chartType": "bar",
+                  "filter": "",
+                  "headers": []
+                }
+              ]
+            },
+            {
+              "id": 11,
+              "name": "Target Vs Weighted Value",
+              "dimensions": {
+                "height": 250,
+                "width": 4
+              },
+              "vizType": "chart",
+              "noUnit": true,
+              "charts": [
+                {
+                  "id": "targetVsWeightedValue",
+                  "name": "Target Vs Weighted Value",
+                  "code": "",
+                  "chartType": "multibar",
+                  "filter": "",
+                  "headers": []
+                }
+              ]
+            },
+            {
+              "id": 11,
+              "name": "Top 3 Sales Persons Wrt Weighted Value",
+              "dimensions": {
+                "height": 250,
+                "width": 4
+              },
+              "vizType": "chart",
+              "noUnit": true,
+              "charts": [
+                {
+                  "id": "top3SalesPersonWrtWeightedValue",
+                  "name": "Top 3 Sales Persons Wrt Weighted Value",
+                  "code": "",
+                  "chartType": "horizontalbar",
+                  "filter": "",
+                  "headers": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "row": 2,
+          "name": "Top 3 Sales Persons Wrt Opportunities",
+          "vizArray": [
+            {
+              "id": 11,
+              "name": "Top 3 Sales Persons Wrt Opportunities",
+              "dimensions": {
+                "height": 250,
+                "width": 4
+              },
+              "vizType": "chart",
+              "noUnit": true,
+              "charts": [
+                {
+                  "id": "top3SalesPersonWrtOpportunity",
+                  "name": "Top 3 Sales Persons Wrt Opportunities",
+                  "code": "",
+                  "chartType": "horizontalbar",
+                  "filter": "",
+                  "headers": []
+                }
+              ]
+            },
+            {
+              "id": 11,
+              "name": "Total Weighted Value By Customer",
+              "dimensions": {
+                "height": 250,
+                "width": 4
+              },
+              "vizType": "chart",
+              "noUnit": true,
+              "charts": [
+                {
+                  "id": "totalWeightedValByCustomer",
+                  "name": "Total Weighted Value By Customer",
+                  "code": "",
+                  "chartType": "horizontalbar",
+                  "filter": "",
+                  "headers": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "row": 3,
+          "name": "Performance Desk",
+          "vizArray": [
+            {
+              "id": 11,
+              "name": "Top 3 Countries Wrt Weighted Value",
+              "dimensions": {
+                "height": 250,
+                "width": 4
+              },
+              "vizType": "chart",
+              "noUnit": true,
+              "charts": [
+                {
+                  "id": "top3CountriesWrtWeightedVal",
+                  "name": "Top 3 Countries Wrt Weighted Value",
+                  "code": "",
+                  "chartType": "horizontalbar",
+                  "filter": "",
+                  "headers": []
+                }
+              ]
+            },
+            {
+              "id": 11,
+              "name": "Top 5 Cutomers Wrt Weighted Value",
+              "dimensions": {
+                "height": 250,
+                "width": 4
+              },
+              "vizType": "chart",
+              "noUnit": true,
+              "charts": [
+                {
+                  "id": "top5CustomerWrtWeightedVal",
+                  "name": "Top 5 Cutomers Wrt Weighted Value",
+                  "code": "",
+                  "chartType": "horizontalbar",
+                  "filter": "",
+                  "headers": []
+                }
+              ]
+            },
+            {
+              "id": 11,
+              "name": "Total Weighted Value By Customer",
+              "dimensions": {
+                "height": 250,
+                "width": 4
+              },
+              "vizType": "chart",
+              "noUnit": true,
+              "charts": [
+                {
+                  "id": "totalWeightedValueByCustomer",
+                  "name": "Total Weighted Value By Customer",
+                  "code": "",
+                  "chartType": "polararea",
+                  "filter": "",
+                  "headers": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "row": 4,
+          "name": "Desk",
+          "vizArray": []
+        }
+      ]
+    },
+    {
+      "name": "Expense Dashboards",
+      "id": "expensedashboards",
+      "isActive": "",
+      "style": "tabbed",
+      "filters": [
+        {
+          "name": "Business Unit",
+          "id": 1,
+          "key": "bu",
+          "values": [
+            "All",
+            "General",
+            "Digital",
+            "MS Enterprise",
+            "Enterprise",
+            "Sweden - Direct",
+            "Finland",
+            "NXT"
+          ]
+        }
+      ],
+      "widgetCharts": [
+        {
+          "id": "expenseCount",
+          "name": "Expense Report",
+          "code": "",
+          "chartType": "metric",
+          "order": 1,
+          "filter": "",
+          "headers": []
+        },
+        {
+          "id": "pendingExpenses",
+          "name": "Pending Expense Count",
+          "code": "",
+          "chartType": "metric",
+          "order": 2,
+          "filter": "",
+          "headers": []
+        },
+        {
+          "id": "waitingExpenses",
+          "name": "Waiting Expense Count",
+          "code": "",
+          "chartType": "metric",
+          "order": 3,
+          "filter": "",
+          "headers": []
+        }
+      ],
+      "visualizations": [
+        {
+          "row": 1,
+          "name": "Expense Desk",
+          "vizArray": [
+            {
+              "id": 11,
+              "name": "Expense Report Trend",
+              "dimensions": {
+                "height": 250,
+                "width": 4
+              },
+              "vizType": "chart",
+              "noUnit": true,
+              "charts": [
+                {
+                  "id": "expenseReportTrend",
+                  "name": "Expense Report Trend",
+                  "code": "",
+                  "chartType": "line",
+                  "filter": "",
+                  "headers": []
+                }
+              ]
+            },
+            {
+              "id": 11,
+              "name": "Expense Submitted Trend",
+              "dimensions": {
+                "height": 250,
+                "width": 8
+              },
+              "vizType": "chart",
+              "noUnit": true,
+              "charts": [
+                {
+                  "id": "expenseSubmittedTrend",
+                  "name": "Expense Submitted Trend",
+                  "code": "",
+                  "chartType": "calendarheatmap",
+                  "filter": "",
+                  "headers": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "row": 2,
+          "name": "Expense Desk",
+          "vizArray": [
+            {
+              "id": 21,
+              "name": "Expense Amount Unitwise",
+              "dimensions": {
+                "height": 250,
+                "width": 4
+              },
+              "vizType": "chart",
+              "noUnit": true,
+              "charts": [
+                {
+                  "id": "ExpenseAmountUnitwise",
+                  "name": "Expense Amount Unitwise",
+                  "code": "",
+                  "chartType": "stackedbar",
+                  "filter": "",
+                  "headers": []
+                }
+              ]
+            },
+            {
+              "id": 21,
+              "name": "Expense Amount Monthwise",
+              "dimensions": {
+                "height": 250,
+                "width": 4
+              },
+              "vizType": "chart",
+              "noUnit": true,
+              "charts": [
+                {
+                  "id": "ExpenseAmountMonthwise",
+                  "name": "Expense Amount Monthwise",
+                  "code": "",
+                  "chartType": "stackedbar",
+                  "filter": "",
+                  "headers": []
+                }
+              ]
+            },
+            {
+              "id": 11,
+              "name": "Top Project Client Expenses",
+              "dimensions": {
+                "height": 250,
+                "width": 4
+              },
+              "vizType": "chart",
+              "noUnit": true,
+              "charts": [
+                {
+                  "id": "topProjectClientExpenses",
+                  "name": "Top Project Client Expenses",
+                  "code": "",
+                  "chartType": "horizontalbar",
+                  "filter": "",
+                  "headers": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "row": 3,
+          "name": "Expense Desk",
+          "vizArray": [
+            {
+              "id": 11,
+              "name": "Reimbursement Composition",
+              "dimensions": {
+                "height": 250,
+                "width": 4
+              },
+              "vizType": "chart",
+              "noUnit": true,
+              "charts": [
+                {
+                  "id": "expenseByReimbursement",
+                  "name": "Expense By Reimbursement",
+                  "code": "",
+                  "chartType": "pie",
+                  "filter": "",
+                  "headers": []
+                }
+              ]
+            },
+            {
+              "id": 11,
+              "name": "Allowance Composition",
+              "dimensions": {
+                "height": 250,
+                "width": 4
+              },
+              "vizType": "chart",
+              "noUnit": true,
+              "charts": [
+                {
+                  "id": "expenseByAllowance",
+                  "name": "Expense By Allowance",
+                  "code": "",
+                  "chartType": "pie",
+                  "filter": "",
+                  "headers": []
+                }
+              ]
+            },
+            {
+              "id": 11,
+              "name": "Top User Expense Claim",
+              "dimensions": {
+                "height": 250,
+                "width": 4
+              },
+              "vizType": "chart",
+              "noUnit": true,
+              "charts": [
+                {
+                  "id": "topUserExpenseClaim",
+                  "name": "Top User Expense Claim",
+                  "code": "",
+                  "chartType": "horizontalbar",
+                  "filter": "",
+                  "headers": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "row": 4,
+          "name": "Expense Desk",
+          "vizArray": [
+            {
+              "id": 12,
+              "name": "Average Time Taken to Approve Expense Monthwise",
+              "dimensions": {
+                "height": 250,
+                "width": 4
+              },
+              "vizType": "chart",
+              "noUnit": true,
+              "charts": [
+                {
+                  "id": "avgTimeToApproveMonthwise",
+                  "name": "Average Time Taken to Approve Expense Monthwise",
+                  "code": "",
+                  "chartType": "stackedbar",
+                  "filter": "",
+                  "headers": []
+                }
+              ]
+            },
+            {
+              "id": 12,
+              "name": "Average Time Taken to Approve Expense Unitwise",
+              "dimensions": {
+                "height": 250,
+                "width": 4
+              },
+              "vizType": "chart",
+              "noUnit": true,
+              "charts": [
+                {
+                  "id": "avgTimeToApproveUnitwise",
+                  "name": "Average Time Taken to Approve Expense Unitwise",
+                  "code": "",
+                  "chartType": "bar",
+                  "filter": "",
+                  "headers": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Leaves Dashboard",
+      "id": "leave",
+      "isActive": "",
+      "style": "tabbed",
+      "filters": [
+        {
+          "name": "Business Unit",
+          "id": 1,
+          "key": "bu",
+          "values": [
+            "All",
+            "Enterprise",
+            "External",
+            "General",
+            "Digital",
+            "NXT",
+            "MS Enterprise"
+          ]
+        }
+      ],
+      "widgetCharts": [
+        {
+          "id": "totalLeaveHours",
+          "name": "Total Leave Hours",
+          "code": "",
+          "chartType": "metric",
+          "order": 1,
+          "filter": "",
+          "headers": []
+        }
+      ],
+      "visualizations": [
+        {
+          "row": 1,
+          "name": "Leave Desk",
+          "vizArray": [
+            {
+              "id": 12,
+              "name": "Leave Share per Business Unit",
+              "dimensions": {
+                "height": 250,
+                "width": 4
+              },
+              "vizType": "chart",
+              "noUnit": true,
+              "charts": [
+                {
+                  "id": "leaveSharePerBu",
+                  "name": "Leave Share per Business Unit",
+                  "code": "",
+                  "chartType": "horizontalbar",
+                  "filter": "bu",
+                  "headers": []
+                }
+              ]
+            },
+            {
+              "id": 12,
+              "name": "Leave Hours By Type",
+              "dimensions": {
+                "height": 250,
+                "width": 4
+              },
+              "vizType": "chart",
+              "noUnit": true,
+              "charts": [
+                {
+                  "id": "leaveHoursByType2",
+                  "name": "Leave Hours By Type",
+                  "code": "",
+                  "chartType": "treemap",
+                  "filter": "",
+                  "headers": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "row": 2,
+          "name": "Leave Specific Charts",
+          "vizArray": [
+            {
+              "id": 12,
+              "name": "Leave & Non Designated Holiday Trend",
+              "dimensions": {
+                "height": 250,
+                "width": 8
+              },
+              "vizType": "chart",
+              "noUnit": true,
+              "charts": [
+                {
+                  "id": "leaveNonDesignatedHolidayTrend",
+                  "name": "Leave & Non Designated Holiday Trend",
+                  "code": "",
+                  "chartType": "line",
+                  "filter": "",
+                  "headers": []
+                }
+              ]
+            },
+            {
+              "id": 111,
+              "name": "Focus Leave Hours and Counts",
+              "dimensions": {
+                "height": 250,
+                "width": 4
+              },
+              "vizType": "metriccollection",
+              "noUnit": true,
+              "isCollapsible": false,
+              "charts": [
+                {
+                  "id": "focusLeaveHoursCount",
+                  "name": "Focus Leave Hours and Counts",
+                  "code": "",
+                  "chartType": "metriccollection",
+                  "filter": "",
+                  "headers": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "MIS Summary Dashboard",
+      "id": "missummarydashboard",
+      "isActive": "",
+      "style": "tabbed",
+      "filters": [],
+      "widgetCharts": [
+        {
+          "id": "totalBilledHours",
+          "name": "Total Billed Hours",
+          "code": "",
+          "chartType": "metric",
+          "order": 1,
+          "filter": "",
+          "headers": []
+        },
+        {
+          "id": "avgPerBillableUtilization",
+          "name": "AVG Billable Utilization( % )",
+          "code": "",
+          "chartType": "metric",
+          "order": 4,
+          "filter": "",
+          "headers": []
+        },
+        {
+          "id": "totalActualRevenue",
+          "name": "Total Actual Revenue",
+          "code": "",
+          "chartType": "metric",
+          "order": 5,
+          "filter": "",
+          "headers": []
+        },
+        {
+          "id": "totalActualGM3",
+          "name": "Total Actual GM3",
+          "code": "",
+          "chartType": "metric",
+          "order": 6,
+          "filter": "",
+          "headers": []
+        },
+        {
+          "id": "totalHC",
+          "name": "Total HC",
+          "code": "",
+          "chartType": "metric",
+          "order": 7,
+          "filter": "",
+          "headers": []
+        }
+      ],
+      "visualizations": [
+        {
+          "row": 1,
+          "name": "Billed Hours By Month",
+          "vizArray": [
+            {
+              "id": 1,
+              "name": "Billed Hours",
+              "dimensions": {
+                "height": 250,
+                "width": 4
+              },
+              "vizType": "chart",
+              "noUnit": true,
+              "isCollapsible": false,
+              "charts": [
+                {
+                  "id": "billedHoursMonth",
+                  "name": "Billed Hours",
+                  "code": "",
+                  "chartType": "bar",
+                  "filter": "",
+                  "headers": []
+                }
+              ]
+            },
+            {
+              "id": 1,
+              "name": "Available Hours",
+              "dimensions": {
+                "height": 250,
+                "width": 4
+              },
+              "vizType": "chart",
+              "noUnit": true,
+              "isCollapsible": false,
+              "charts": [
+                {
+                  "id": "availableHoursMonth",
+                  "name": "Available Hours",
+                  "code": "",
+                  "chartType": "bar",
+                  "filter": "",
+                  "headers": []
+                }
+              ]
+            },
+            {
+              "id": 1,
+              "name": "Cost of Unbilled Hours",
+              "dimensions": {
+                "height": 250,
+                "width": 4
+              },
+              "vizType": "chart",
+              "noUnit": true,
+              "isCollapsible": false,
+              "charts": [
+                {
+                  "id": "costUnbilledHoursMonth",
+                  "name": "Cost of Unbilled Hours",
+                  "code": "",
+                  "chartType": "bar",
+                  "filter": "",
+                  "headers": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "row": 2,
+          "name": "",
+          "vizArray": [
+            {
+              "id": 1,
+              "name": "Target Revenue Vs Actual Revenue",
+              "dimensions": {
+                "height": 250,
+                "width": 4
+              },
+              "vizType": "chart",
+              "noUnit": true,
+              "isCollapsible": false,
+              "charts": [
+                {
+                  "id": "targetVsActualRevenue",
+                  "name": "Target Revenue Vs Actual Revenue",
+                  "code": "",
+                  "chartType": "line",
+                  "filter": "",
+                  "headers": []
+                }
+              ]
+            },
+            {
+              "id": 1,
+              "name": "Target GM3 Vs Actual GM3",
+              "dimensions": {
+                "height": 250,
+                "width": 4
+              },
+              "vizType": "chart",
+              "noUnit": true,
+              "isCollapsible": false,
+              "charts": [
+                {
+                  "id": "targetVsActualGM3",
+                  "name": "Target GM3 Vs Actual GM3",
+                  "code": "",
+                  "chartType": "line",
+                  "filter": "",
+                  "headers": []
+                }
+              ]
+            },
+            {
+              "id": 1,
+              "name": "Actual Revenue & Actual GM3",
+              "dimensions": {
+                "height": 250,
+                "width": 4
+              },
+              "vizType": "chart",
+              "noUnit": true,
+              "isCollapsible": false,
+              "charts": [
+                {
+                  "id": "actualRevenueGM3",
+                  "name": "Actual Revenue & Actual GM3",
+                  "code": "",
+                  "chartType": "mixed",
+                  "filter": "",
+                  "headers": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "row": 3,
+          "name": "",
+          "vizArray": [
+            {
+              "id": 1,
+              "name": "Working Days",
+              "dimensions": {
+                "height": 250,
+                "width": 4
+              },
+              "vizType": "chart",
+              "noUnit": true,
+              "isCollapsible": false,
+              "charts": [
+                {
+                  "id": "workingDays",
+                  "name": "Working Days",
+                  "code": "",
+                  "chartType": "multibar",
+                  "filter": "",
+                  "headers": []
+                }
+              ]
+            },
+            {
+              "id": 1,
+              "name": "Head Counts",
+              "dimensions": {
+                "height": 250,
+                "width": 4
+              },
+              "vizType": "chart",
+              "noUnit": true,
+              "isCollapsible": false,
+              "charts": [
+                {
+                  "id": "headCount",
+                  "name": "Head Counts",
+                  "code": "",
+                  "chartType": "multibar",
+                  "filter": "",
+                  "headers": []
+                }
+              ]
+            },
+            {
+              "id": 1,
+              "name": "Sub-Cont",
+              "dimensions": {
+                "height": 250,
+                "width": 4
+              },
+              "vizType": "chart",
+              "noUnit": true,
+              "isCollapsible": false,
+              "charts": [
+                {
+                  "id": "subCont",
+                  "name": "Sub-Cont",
+                  "code": "",
+                  "chartType": "multibar",
+                  "filter": "",
+                  "headers": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "row": 4,
+          "name": "",
+          "vizArray": [
+            {
+              "id": 1,
+              "name": "Billable Utilization (IN %)",
+              "dimensions": {
+                "height": 250,
+                "width": 4
+              },
+              "vizType": "chart",
+              "noUnit": true,
+              "isCollapsible": false,
+              "charts": [
+                {
+                  "id": "billableUtilizationPer",
+                  "name": "Billable Utilization (IN %)",
+                  "code": "",
+                  "chartType": "multibar",
+                  "filter": "",
+                  "headers": []
+                }
+              ]
+            },
+            {
+              "id": 1,
+              "name": "YTD Revenue Target Achieved (IN %)",
+              "dimensions": {
+                "height": 250,
+                "width": 4
+              },
+              "vizType": "chart",
+              "noUnit": true,
+              "isCollapsible": false,
+              "charts": [
+                {
+                  "id": "ytdRevTargetAchievedPer",
+                  "name": "YTD Revenue Target Achieved (IN %)",
+                  "code": "",
+                  "chartType": "multibar",
+                  "filter": "",
+                  "headers": []
+                }
+              ]
+            },
+            {
+              "id": 1,
+              "name": "YTD GM3 Target Achieved (IN %)",
+              "dimensions": {
+                "height": 250,
+                "width": 4
+              },
+              "vizType": "chart",
+              "noUnit": true,
+              "isCollapsible": false,
+              "charts": [
+                {
+                  "id": "ytdGM3TargetAchievedPer",
+                  "name": "YTD GM3 Target Achieved (IN %)",
+                  "code": "",
+                  "chartType": "multibar",
+                  "filter": "",
+                  "headers": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "row": 4,
+          "name": "",
+          "vizArray": [
+            {
+              "id": 1,
+              "name": "Target GM3 Vs Actual GM3 (IN %)",
+              "dimensions": {
+                "height": 250,
+                "width": 4
+              },
+              "vizType": "chart",
+              "noUnit": true,
+              "isCollapsible": false,
+              "charts": [
+                {
+                  "id": "targetVsActualGM3Per",
+                  "name": "Target GM3 Vs Actual GM3 (IN %)",
+                  "code": "",
+                  "chartType": "line",
+                  "filter": "",
+                  "headers": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "MIS IBU Dashboard",
+      "id": "ibumisdashboard",
+      "isActive": "",
+      "style": "tabbed",
+      "filters": [
+        {
+          "name": "Business Unit",
+          "id": 1,
+          "key": "ibu",
+          "values": [
+            "All",
+            "Digital",
+            "EC",
+            "MS",
+            "NXT",
+            "Sweden direct",
+            "Finland"
+          ]
+        },
+        {
+          "name": "Country",
+          "id": 1,
+          "key": "country",
+          "values": [
+            "All",
+            "India",
+            "Sweden",
+            "Finland",
+            "Sweden"
+          ]
+        }
+      ],
+      "widgetCharts": [
+        {
+          "id": "totalRevenue",
+          "name": "Total Revenue",
+          "code": "",
+          "chartType": "metric",
+          "order": 1,
+          "filter": "",
+          "headers": []
+        },
+        {
+          "id": "totalDirectCost",
+          "name": "Total Direct Cost",
+          "code": "",
+          "chartType": "metric",
+          "order": 2,
+          "filter": "",
+          "headers": []
+        },
+        {
+          "id": "totalGrossMargin",
+          "name": "Total Gross Margin",
+          "code": "",
+          "chartType": "metric",
+          "order": 3,
+          "filter": "",
+          "headers": []
+        },
+        {
+          "id": "totalOH",
+          "name": "Total OH",
+          "code": "",
+          "chartType": "metric",
+          "order": 4,
+          "filter": "",
+          "headers": []
+        },
+        {
+          "id": "tatalEBITDA",
+          "name": "Total EBITDA",
+          "code": "",
+          "chartType": "metric",
+          "order": 5,
+          "filter": "",
+          "headers": []
+        },
+        {
+          "id": "tatalGeneralAdminOH",
+          "name": "Total General & Admin OH",
+          "code": "",
+          "chartType": "metric",
+          "order": 6,
+          "filter": "",
+          "headers": []
+        }
+      ],
+      "visualizations": [
+        {
+          "row": 1,
+          "name": "",
+          "vizArray": [
+            {
+              "id": 1,
+              "name": "Revenue",
+              "dimensions": {
+                "height": 250,
+                "width": 6
+              },
+              "vizType": "chart",
+              "noUnit": true,
+              "isCollapsible": false,
+              "charts": [
+                {
+                  "id": "revenue",
+                  "name": "Revenue",
+                  "code": "",
+                  "chartType": "bar",
+                  "filter": "",
+                  "headers": []
+                }
+              ]
+            },
+            {
+              "id": 1,
+              "name": "OH",
+              "dimensions": {
+                "height": 250,
+                "width": 6
+              },
+              "vizType": "chart",
+              "noUnit": true,
+              "isCollapsible": false,
+              "charts": [
+                {
+                  "id": "eachOH",
+                  "name": "OH",
+                  "code": "",
+                  "chartType": "stackedbar",
+                  "filter": "",
+                  "headers": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "row": 2,
+          "name": "",
+          "vizArray": [
+            {
+              "id": 1,
+              "name": "Employee Direct Cost Billed & Unbilled",
+              "dimensions": {
+                "height": 250,
+                "width": 6
+              },
+              "vizType": "chart",
+              "noUnit": true,
+              "isCollapsible": false,
+              "charts": [
+                {
+                  "id": "costBilledUnbilled",
+                  "name": "Employee Direct Cost Billed & Unbilled",
+                  "code": "",
+                  "chartType": "line",
+                  "filter": "",
+                  "headers": []
+                }
+              ]
+            },
+            {
+              "id": 1,
+              "name": "Direct Employee Costs",
+              "dimensions": {
+                "height": 250,
+                "width": 6
+              },
+              "vizType": "chart",
+              "noUnit": true,
+              "isCollapsible": false,
+              "charts": [
+                {
+                  "id": "eachCosts",
+                  "name": "Direct Employee Costs",
+                  "code": "",
+                  "chartType": "stackedbar",
+                  "filter": "",
+                  "headers": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "row": 3,
+          "name": "",
+          "vizArray": [
+            {
+              "id": 1,
+              "name": "Gross Margin",
+              "dimensions": {
+                "height": 250,
+                "width": 6
+              },
+              "vizType": "chart",
+              "noUnit": true,
+              "isCollapsible": false,
+              "charts": [
+                {
+                  "id": "grossMargin",
+                  "name": "Gross Margin",
+                  "code": "",
+                  "chartType": "bar",
+                  "filter": "",
+                  "headers": []
+                }
+              ]
+            },
+            {
+              "id": 1,
+              "name": "Total Direct Cost",
+              "dimensions": {
+                "height": 250,
+                "width": 6
+              },
+              "vizType": "chart",
+              "noUnit": true,
+              "isCollapsible": false,
+              "charts": [
+                {
+                  "id": "totalDirectCostMonth",
+                  "name": "Total Direct Cost",
+                  "code": "",
+                  "chartType": "bar",
+                  "filter": "",
+                  "headers": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "row": 4,
+          "name": "",
+          "vizArray": [
+            {
+              "id": 1,
+              "name": "Total OH",
+              "dimensions": {
+                "height": 250,
+                "width": 6
+              },
+              "vizType": "chart",
+              "noUnit": true,
+              "isCollapsible": false,
+              "charts": [
+                {
+                  "id": "totalOHMonth",
+                  "name": "Total OH",
+                  "code": "",
+                  "chartType": "bar",
+                  "filter": "",
+                  "headers": []
+                }
+              ]
+            },
+            {
+              "id": 1,
+              "name": "EBITDA",
+              "dimensions": {
+                "height": 250,
+                "width": 6
+              },
+              "vizType": "chart",
+              "noUnit": true,
+              "isCollapsible": false,
+              "charts": [
+                {
+                  "id": "EBITDA",
+                  "name": "EBITDA",
+                  "code": "",
+                  "chartType": "bar",
+                  "filter": "",
+                  "headers": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "row": 5,
+          "name": "",
+          "vizArray": [
+            {
+              "id": 1,
+              "name": "Direct Employee Costs-Billed",
+              "dimensions": {
+                "height": 250,
+                "width": 6
+              },
+              "vizType": "chart",
+              "noUnit": true,
+              "isCollapsible": false,
+              "charts": [
+                {
+                  "id": "directEmpCostBilled",
+                  "name": "Direct Employee Costs-BilledDirect Employee Costs-Billed",
+                  "code": "",
+                  "chartType": "bar",
+                  "filter": "",
+                  "headers": []
+                }
+              ]
+            },
+            {
+              "id": 1,
+              "name": "Direct Employee Costs-Unbilled",
+              "dimensions": {
+                "height": 250,
+                "width": 6
+              },
+              "vizType": "chart",
+              "noUnit": true,
+              "isCollapsible": false,
+              "charts": [
+                {
+                  "id": "directEmpCostsUnbilled",
+                  "name": "Direct Employee Costs-Unbilled",
+                  "code": "",
+                  "chartType": "bar",
+                  "filter": "",
+                  "headers": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "row": 6,
+          "name": "",
+          "vizArray": [
+            {
+              "id": 1,
+              "name": "Subcontractor Costs",
+              "dimensions": {
+                "height": 250,
+                "width": 4
+              },
+              "vizType": "chart",
+              "noUnit": true,
+              "isCollapsible": false,
+              "charts": [
+                {
+                  "id": "subcontractorCosts",
+                  "name": "Subcontractor Costs",
+                  "code": "",
+                  "chartType": "bar",
+                  "filter": "",
+                  "headers": []
+                }
+              ]
+            },
+            {
+              "id": 1,
+              "name": "BDU Salary & Travel Costs",
+              "dimensions": {
+                "height": 250,
+                "width": 4
+              },
+              "vizType": "chart",
+              "noUnit": true,
+              "isCollapsible": false,
+              "charts": [
+                {
+                  "id": "bduSalaryTravelCosts",
+                  "name": "BDU Salary & Travel Costs",
+                  "code": "",
+                  "chartType": "bar",
+                  "filter": "",
+                  "headers": []
+                }
+              ]
+            },
+            {
+              "id": 1,
+              "name": "Other Project Related Costs",
+              "dimensions": {
+                "height": 250,
+                "width": 4
+              },
+              "vizType": "chart",
+              "noUnit": true,
+              "isCollapsible": false,
+              "charts": [
+                {
+                  "id": "otherProjectRelatedCosts",
+                  "name": "Other Project Related Costs",
+                  "code": "",
+                  "chartType": "bar",
+                  "filter": "",
+                  "headers": []
+                }
+              ]
+            },
+            {
+              "id": 1,
+              "name": "Sales & Marketing OH",
+              "dimensions": {
+                "height": 250,
+                "width": 4
+              },
+              "vizType": "chart",
+              "noUnit": true,
+              "isCollapsible": false,
+              "charts": [
+                {
+                  "id": "salesMarketingOH",
+                  "name": "Sales & Marketing OH",
+                  "code": "",
+                  "chartType": "bar",
+                  "filter": "",
+                  "headers": []
+                }
+              ]
+            },
+            {
+              "id": 1,
+              "name": "Management OH",
+              "dimensions": {
+                "height": 250,
+                "width": 4
+              },
+              "vizType": "chart",
+              "noUnit": true,
+              "isCollapsible": false,
+              "charts": [
+                {
+                  "id": "managementOH",
+                  "name": "Management OH",
+                  "code": "",
+                  "chartType": "bar",
+                  "filter": "",
+                  "headers": []
+                }
+              ]
+            },
+            {
+              "id": 1,
+              "name": "General & Admin OH",
+              "dimensions": {
+                "height": 250,
+                "width": 4
+              },
+              "vizType": "chart",
+              "noUnit": true,
+              "isCollapsible": false,
+              "charts": [
+                {
+                  "id": "generalAdminOH",
+                  "name": "General & Admin OH",
+                  "code": "",
+                  "chartType": "bar",
+                  "filter": "",
+                  "headers": []
+                }
+              ]
+            },
+            {
+              "id": 1,
+              "name": "Direct Employee Travel Costs",
+              "dimensions": {
+                "height": 250,
+                "width": 4
+              },
+              "vizType": "chart",
+              "noUnit": true,
+              "isCollapsible": false,
+              "charts": [
+                {
+                  "id": "directEmpTravelCosts",
+                  "name": "Direct Employee Travel Costs",
+                  "code": "",
+                  "chartType": "bar",
+                  "filter": "",
+                  "headers": []
+                }
+              ]
+            },
+            {
+              "id": 1,
+              "name": "AVG Gross Margin (IN %)",
+              "dimensions": {
+                "height": 250,
+                "width": 4
+              },
+              "vizType": "chart",
+              "noUnit": true,
+              "isCollapsible": false,
+              "charts": [
+                {
+                  "id": "avgGrossMargin",
+                  "name": "AVG Gross Margin (IN %)",
+                  "code": "",
+                  "chartType": "bar",
+                  "filter": "",
+                  "headers": []
+                }
+              ]
+            },
+            {
+              "id": 1,
+              "name": "AVG EBITDA (IN %)",
+              "dimensions": {
+                "height": 250,
+                "width": 4
+              },
+              "vizType": "chart",
+              "noUnit": true,
+              "isCollapsible": false,
+              "charts": [
+                {
+                  "id": "avgEbitdaPer",
+                  "name": "AVG EBITDA (IN %)",
+                  "code": "",
+                  "chartType": "bar",
+                  "filter": "",
+                  "headers": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

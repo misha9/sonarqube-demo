@@ -1,0 +1,466 @@
+{
+  "took": 2700,
+  "timed_out": false,
+  "_shards": {
+    "total": 5,
+    "successful": 5,
+    "skipped": 0,
+    "failed": 0
+  },
+  "hits": {
+    "total": 2072007,
+    "max_score": 0,
+    "hits": []
+  },
+  "aggregations": {
+    "District Names": {
+      "doc_count_error_upper_bound": 0,
+      "sum_other_doc_count": 0,
+      "buckets": [
+        {
+          "key": "Banaskantha",
+          "doc_count": 50984,
+          "Profession Names": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 0,
+            "buckets": [
+              {
+                "key": "Others",
+                "doc_count": 49992,
+                "Profession Names": {
+                  "value": 50051
+                }
+              },
+              {
+                "key": "Ayurveda Practitioner",
+                "doc_count": 187,
+                "Profession Names": {
+                  "value": 187
+                }
+              },
+              {
+                "key": "Essential services and other support staff",
+                "doc_count": 154,
+                "Profession Names": {
+                  "value": 154
+                }
+              },
+              {
+                "key": "Homeopathy Practitioner",
+                "doc_count": 118,
+                "Profession Names": {
+                  "value": 118
+                }
+              },
+              {
+                "key": "Ayush Student",
+                "doc_count": 100,
+                "Profession Names": {
+                  "value": 100
+                }
+              },
+              {
+                "key": "National Service Scheme (NSS) Volunteers",
+                "doc_count": 97,
+                "Profession Names": {
+                  "value": 97
+                }
+              },
+              {
+                "key": "Nurse",
+                "doc_count": 64,
+                "Profession Names": {
+                  "value": 64
+                }
+              },
+              {
+                "key": "Yoga and Naturopathy Practitioner",
+                "doc_count": 64,
+                "Profession Names": {
+                  "value": 64
+                }
+              },
+              {
+                "key": "Trained Workers under DDU GKY or DAY NULM",
+                "doc_count": 53,
+                "Profession Names": {
+                  "value": 53
+                }
+              },
+              {
+                "key": "ASHA Worker",
+                "doc_count": 39,
+                "Profession Names": {
+                  "value": 39
+                }
+              },
+              {
+                "key": "Lab Technicians or other Technicians",
+                "doc_count": 27,
+                "Profession Names": {
+                  "value": 27
+                }
+              },
+              {
+                "key": "Volunteers",
+                "doc_count": 21,
+                "Profession Names": {
+                  "value": 21
+                }
+              },
+              {
+                "key": "Nehru Yuva Kendra Sangathan (NYK) Volunteers",
+                "doc_count": 19,
+                "Profession Names": {
+                  "value": 19
+                }
+              },
+              {
+                "key": "Siddha Practitioner",
+                "doc_count": 10,
+                "Profession Names": {
+                  "value": 10
+                }
+              },
+              {
+                "key": "Doctor",
+                "doc_count": 9,
+                "Profession Names": {
+                  "value": 9
+                }
+              },
+              {
+                "key": "Unani Practitioner",
+                "doc_count": 7,
+                "Profession Names": {
+                  "value": 7
+                }
+              },
+              {
+                "key": "Panchayat and Gram Rozgar Sewak ",
+                "doc_count": 6,
+                "Profession Names": {
+                  "value": 6
+                }
+              },
+              {
+                "key": "MBBS",
+                "doc_count": 5,
+                "Profession Names": {
+                  "value": 5
+                }
+              },
+              {
+                "key": "National Cadet Corps (NCC) Cadets",
+                "doc_count": 5,
+                "Profession Names": {
+                  "value": 5
+                }
+              },
+              {
+                "key": "Police Personnel",
+                "doc_count": 4,
+                "Profession Names": {
+                  "value": 4
+                }
+              },
+              {
+                "key": "Auxiliary Nurse Midwife (ANM)",
+                "doc_count": 2,
+                "Profession Names": {
+                  "value": 2
+                }
+              },
+              {
+                "key": "Ex-Servicemen",
+                "doc_count": 1,
+                "Profession Names": {
+                  "value": 1
+                }
+              }
+            ]
+          }
+        },
+        {
+          "key": "Anand",
+          "doc_count": 46654,
+          "Profession Names": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 0,
+            "buckets": [
+              {
+                "key": "Others",
+                "doc_count": 45928,
+                "Profession Names": {
+                  "value": 45562
+                }
+              },
+              {
+                "key": "Nehru Yuva Kendra Sangathan (NYK) Volunteers",
+                "doc_count": 251,
+                "Profession Names": {
+                  "value": 251
+                }
+              },
+              {
+                "key": "Essential services and other support staff",
+                "doc_count": 153,
+                "Profession Names": {
+                  "value": 153
+                }
+              },
+              {
+                "key": "National Service Scheme (NSS) Volunteers",
+                "doc_count": 77,
+                "Profession Names": {
+                  "value": 77
+                }
+              },
+              {
+                "key": "Homeopathy Practitioner",
+                "doc_count": 74,
+                "Profession Names": {
+                  "value": 74
+                }
+              },
+              {
+                "key": "Ayurveda Practitioner",
+                "doc_count": 48,
+                "Profession Names": {
+                  "value": 48
+                }
+              },
+              {
+                "key": "National Cadet Corps (NCC) Cadets",
+                "doc_count": 30,
+                "Profession Names": {
+                  "value": 30
+                }
+              },
+              {
+                "key": "Trained Workers under DDU GKY or DAY NULM",
+                "doc_count": 28,
+                "Profession Names": {
+                  "value": 28
+                }
+              },
+              {
+                "key": "Volunteers",
+                "doc_count": 19,
+                "Profession Names": {
+                  "value": 19
+                }
+              },
+              {
+                "key": "Doctor",
+                "doc_count": 14,
+                "Profession Names": {
+                  "value": 14
+                }
+              },
+              {
+                "key": "MBBS",
+                "doc_count": 12,
+                "Profession Names": {
+                  "value": 12
+                }
+              },
+              {
+                "key": "ASHA Worker",
+                "doc_count": 10,
+                "Profession Names": {
+                  "value": 10
+                }
+              },
+              {
+                "key": "Unani Practitioner",
+                "doc_count": 5,
+                "Profession Names": {
+                  "value": 5
+                }
+              },
+              {
+                "key": "Police Personnel",
+                "doc_count": 4,
+                "Profession Names": {
+                  "value": 4
+                }
+              },
+              {
+                "key": "Ayush Student",
+                "doc_count": 1,
+                "Profession Names": {
+                  "value": 1
+                }
+              }
+            ]
+          }
+        },
+        {
+          "key": "Surat",
+          "doc_count": 41556,
+          "Profession Names": {
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 0,
+            "buckets": [
+              {
+                "key": "Others",
+                "doc_count": 37497,
+                "Profession Names": {
+                  "value": 37904
+                }
+              },
+              {
+                "key": "Essential services and other support staff",
+                "doc_count": 1659,
+                "Profession Names": {
+                  "value": 1659
+                }
+              },
+              {
+                "key": "National Service Scheme (NSS) Volunteers",
+                "doc_count": 398,
+                "Profession Names": {
+                  "value": 398
+                }
+              },
+              {
+                "key": "Nehru Yuva Kendra Sangathan (NYK) Volunteers",
+                "doc_count": 329,
+                "Profession Names": {
+                  "value": 329
+                }
+              },
+              {
+                "key": "Nurse",
+                "doc_count": 300,
+                "Profession Names": {
+                  "value": 300
+                }
+              },
+              {
+                "key": "Post Graduate (PG)",
+                "doc_count": 300,
+                "Profession Names": {
+                  "value": 300
+                }
+              },
+              {
+                "key": "National Cadet Corps (NCC) Cadets",
+                "doc_count": 182,
+                "Profession Names": {
+                  "value": 182
+                }
+              },
+              {
+                "key": "ASHA Worker",
+                "doc_count": 145,
+                "Profession Names": {
+                  "value": 145
+                }
+              },
+              {
+                "key": "Trained Workers under DDU GKY or DAY NULM",
+                "doc_count": 143,
+                "Profession Names": {
+                  "value": 143
+                }
+              },
+              {
+                "key": "MBBS",
+                "doc_count": 129,
+                "Profession Names": {
+                  "value": 129
+                }
+              },
+              {
+                "key": "Doctor",
+                "doc_count": 87,
+                "Profession Names": {
+                  "value": 87
+                }
+              },
+              {
+                "key": "Volunteers",
+                "doc_count": 72,
+                "Profession Names": {
+                  "value": 72
+                }
+              },
+              {
+                "key": "Ayush Student",
+                "doc_count": 48,
+                "Profession Names": {
+                  "value": 48
+                }
+              },
+              {
+                "key": "Ayurveda Practitioner",
+                "doc_count": 46,
+                "Profession Names": {
+                  "value": 46
+                }
+              },
+              {
+                "key": "Auxiliary Nurse Midwife (ANM)",
+                "doc_count": 38,
+                "Profession Names": {
+                  "value": 38
+                }
+              },
+              {
+                "key": "Ex-Servicemen",
+                "doc_count": 37,
+                "Profession Names": {
+                  "value": 37
+                }
+              },
+              {
+                "key": "Homeopathy Practitioner",
+                "doc_count": 32,
+                "Profession Names": {
+                  "value": 32
+                }
+              },
+              {
+                "key": "Police Personnel",
+                "doc_count": 27,
+                "Profession Names": {
+                  "value": 27
+                }
+              },
+              {
+                "key": "Lab Technicians or other Technicians",
+                "doc_count": 23,
+                "Profession Names": {
+                  "value": 23
+                }
+              },
+              {
+                "key": "Panchayat and Gram Rozgar Sewak ",
+                "doc_count": 23,
+                "Profession Names": {
+                  "value": 23
+                }
+              },
+              {
+                "key": "Bharat Scouts and Guides (BSG) Volunteers",
+                "doc_count": 21,
+                "Profession Names": {
+                  "value": 21
+                }
+              },
+              {
+                "key": "Yoga and Naturopathy Practitioner",
+                "doc_count": 20,
+                "Profession Names": {
+                  "value": 20
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+}

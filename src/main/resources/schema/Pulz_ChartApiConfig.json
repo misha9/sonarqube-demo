@@ -1,0 +1,205 @@
+{
+  "ratingShare": {
+    "chartName": "Rating Share",
+    "queries": [
+      {
+        "module": "COMMON",
+        "requestQueryMap": "{\r\n  \"storeCode\" : \"storeCode\", \n\"gender\" : \"gender\"}",
+        "dateRefField": "serverDateTime",
+        "indexName": "pontus_app_feedback",
+        "esInstance" : "SECONDARY",
+        "aggrQuery": "{\"aggs\":{\"RatingShare\":{\"terms\":{\"field\":\"value\",\"size\":100},\"aggs\":{\"value_count\":{\"value_count\":{\"field\":\"serverDateTime\"}}}}}}"
+
+      }
+    ],
+    "chartType": "pie",
+    "valueType": "number",
+    "action": "",
+    "documentType": "_doc",
+    "drillChart": "none",
+    "aggregationPaths": [
+      "RatingShare"
+    ],
+    "insight": {
+    },
+    "_comment": " "
+  },
+  "reasonShare": {
+    "chartName": "Reason Share",
+    "queries": [
+      {
+        "module": "COMMON",
+        "requestQueryMap": "{\r\n  \"storeCode\" : \"storeCode\", \n\"gender\" : \"gender\"}",
+        "dateRefField": "serverDateTime",
+        "indexName": "pontus_app_feedback",
+        "esInstance" : "SECONDARY",
+        "aggrQuery": "{\"aggs\":{\"ReasonShare\":{\"terms\":{\"field\":\"reasons.keyword\",\"size\":100},\"aggs\":{\"value_count\":{\"value_count\":{\"field\":\"serverDateTime\"}}}}}}"
+
+      }
+    ],
+    "chartType": "horizontalbar",
+    "valueType": "number",
+    "action": "",
+    "documentType": "_doc",
+    "drillChart": "none",
+    "aggregationPaths": [
+      "ReasonShare"
+    ],
+    "insight": {
+    },
+    "_comment": " "
+  },
+  "ratingSplitTrend": {
+    "chartName": "Rating Split Trend",
+    "queries": [
+      {
+        "module": "COMMON",
+        "requestQueryMap": "{\r\n  \"storeCode\" : \"storeCode\", \n\"gender\" : \"gender\"}",
+        "dateRefField": "serverDateTime",
+        "indexName": "pontus_app_feedback",
+        "esInstance" : "SECONDARY",
+        "aggrQuery": "{\"aggs\":{\"1 Rating\":{\"date_histogram\":{\"field\":\"serverDateTime\",\"interval\":\"day\"},\"aggs\":{\"OneRating\":{\"filters\":{\"filters\":{\"One\":{\"match\":{\"value\":1}}}},\"aggs\":{\"Count\":{\"value_count\":{\"field\":\"serverDateTime\"}}}}}},\"2 Rating\":{\"date_histogram\":{\"field\":\"serverDateTime\",\"interval\":\"day\"},\"aggs\":{\"TwoRating\":{\"filters\":{\"filters\":{\"Two\":{\"match\":{\"value\":2}}}},\"aggs\":{\"Count\":{\"value_count\":{\"field\":\"serverDateTime\"}}}}}},\"3 Rating\":{\"date_histogram\":{\"field\":\"serverDateTime\",\"interval\":\"day\"},\"aggs\":{\"ThreeRating\":{\"filters\":{\"filters\":{\"Two\":{\"match\":{\"value\":3}}}},\"aggs\":{\"Count\":{\"value_count\":{\"field\":\"serverDateTime\"}}}}}}}}"
+
+      }
+    ],
+    "chartType": "line",
+    "valueType": "number",
+    "action": "",
+    "drillChart": "none",
+    "documentType": "_doc",
+    "aggregationPaths": [
+      "1 Rating",
+      "2 Rating",
+      "3 Rating"
+    ],
+    "isCumulative": false,
+    "interval": "day",
+    "insight": {
+    },
+    "_comment": " "
+  },
+  "reasonsGenderShare": {
+    "chartName": "Reasons Gender Share",
+    "queries": [
+      {
+        "module": "COMMON",
+        "requestQueryMap": "{\r\n  \"storeCode\" : \"storeCode\", \n\"gender\" : \"gender\"}",
+        "dateRefField": "serverDateTime",
+        "indexName": "pontus_app_feedback",
+        "esInstance" : "SECONDARY",
+        "aggrQuery": "{\"aggs\":{\"Reasons Male\":{\"terms\":{\"field\":\"reasons.keyword\",\"size\":100},\"aggs\":{\"Gender\":{\"filters\":{\"filters\":{\"Male\":{\"match\":{\"gender\":\"Men\"}}}},\"aggs\":{\"Count\":{\"value_count\":{\"field\":\"serverDateTime\"}}}}}},\"Reasons Female\":{\"terms\":{\"field\":\"reasons.keyword\",\"size\":100},\"aggs\":{\"Gender\":{\"filters\":{\"filters\":{\"Female\":{\"match\":{\"gender\":\"Women\"}}}},\"aggs\":{\"Count\":{\"value_count\":{\"field\":\"serverDateTime\"}}}}}}}}"
+
+      }
+    ],
+    "chartType": "multibar",
+    "valueType": "number",
+    "action": "",
+    "drillChart": "none",
+    "documentType": "_doc",
+    "aggregationPaths": [
+      "Reasons Male",
+      "Reasons Female"
+    ],
+    "isCumulative": false,
+    "interval": "day",
+    "insight": {
+    },
+    "_comment": " "
+  },
+  "genderShare": {
+    "chartName": "Gender Share",
+    "queries": [
+      {
+        "module": "COMMON",
+        "requestQueryMap": "{\r\n  \"storeCode\" : \"storeCode\", \n\"gender\" : \"gender\"}",
+        "dateRefField": "serverDateTime",
+        "indexName": "pontus_app_feedback",
+        "esInstance" : "SECONDARY",
+        "aggrQuery": "{\"aggs\":{\"Gender Share\":{\"terms\":{\"field\":\"gender.keyword\",\"size\":100},\"aggs\":{\"value_count\":{\"value_count\":{\"field\":\"serverDateTime\"}}}}}}"
+      }
+    ],
+    "chartType": "donut",
+    "valueType": "number",
+    "action": "",
+    "documentType": "_doc",
+    "drillChart": "none",
+    "aggregationPaths": [
+      "Gender Share"
+    ],
+    "insight": {
+    },
+    "_comment": " "
+  },
+  "averageRating": {
+    "chartName": "Average Rating",
+    "queries": [
+      {
+        "module": "COMMON",
+        "requestQueryMap": "{\r\n  \"storeCode\" : \"storeCode\", \n\"gender\" : \"gender\"}",
+        "dateRefField": "serverDateTime",
+        "indexName": "pontus_app_feedback",
+        "esInstance" : "SECONDARY",
+        "aggrQuery": "{\"aggs\":{\"Average Rating\":{\"avg\":{\"field\":\"value\"}}}}"
+      }
+    ],
+    "chartType": "metric",
+    "valueType": "number",
+    "drillChart": "none",
+    "documentType": "_doc",
+    "action": "",
+    "aggregationPaths": [
+      "Average Rating"
+    ],
+    "insight": {
+    },
+    "_comment": " "
+  },
+  "totalRatingsReceived": {
+    "chartName": "Total Ratings Received",
+    "queries": [
+      {
+        "module": "COMMON",
+        "requestQueryMap": "{\r\n  \"storeCode\" : \"storeCode\", \n\"gender\" : \"gender\"}",
+        "dateRefField": "serverDateTime",
+        "indexName": "pontus_app_feedback",
+        "esInstance" : "SECONDARY",
+        "aggrQuery": "{\"aggs\":{\"Total Rating Received\":{\"value_count\":{\"field\":\"serverDateTime\"}}}}"
+      }
+    ],
+    "chartType": "metric",
+    "valueType": "number",
+    "drillChart": "none",
+    "documentType": "_doc",
+    "action": "",
+    "aggregationPaths": [
+      "Total Rating Received"
+    ],
+    "insight": {
+    },
+    "_comment": " "
+  },
+  "totalStoreCount": {
+    "chartName": "Total Store Count",
+    "queries": [
+      {
+        "module": "COMMON",
+        "requestQueryMap": "{\r\n  \"storeCode\" : \"storeCode\", \n\"gender\" : \"gender\"}",
+        "dateRefField": "serverDateTime",
+        "indexName": "pontus_app_feedback",
+        "esInstance" : "SECONDARY",
+        "aggrQuery": "{\"aggs\":{\"Total Store Count\":{\"cardinality\":{\"field\":\"storeId\",\"precision_threshold\":100}}}}"
+      }
+    ],
+    "chartType": "metric",
+    "valueType": "number",
+    "drillChart": "none",
+    "documentType": "_doc",
+    "action": "",
+    "aggregationPaths": [
+      "Total Store Count"
+    ],
+    "insight": {
+    },
+    "_comment": " "
+  }
+}

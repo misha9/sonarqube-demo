@@ -1,0 +1,203 @@
+{
+  "ticketTrend": {
+    "chartName": "Ticket Trend",
+    "queries": [
+      {
+        "module": "COMMON",
+        "dateRefField": "createdTimeTS",
+        "requestQueryMap": "{\r\n  \"status\" : \"status\", \n\"active\" : \"active\"}",
+        "indexName": "aurora-ticket",
+        "esInstance" : "PRIMARY",
+        "aggrQuery": "{\"aggs\":{\"Ticket Trend\":{\"date_histogram\":{\"field\":\"createdTimeTS\",\"interval\":\"week\"},\"aggs\":{\"Count\":{\"value_count\":{\"field\":\"id\"}}}}}}"
+      }
+    ],
+    "chartType": "line",
+    "valueType": "number",
+    "action": "",
+    "drillChart": "none",
+    "documentType": "_doc",
+    "aggregationPaths": [
+      "Ticket Trend"
+    ],
+    "isCumulative": false,
+    "interval": "week",
+    "insight": {
+    },
+    "_comment": " "
+  },
+  "ticketsPerAppName": {
+    "chartName": "Tickets Per App Name",
+    "queries": [
+      {
+        "module": "COMMON",
+        "dateRefField": "createdTimeTS",
+        "requestQueryMap": "{\r\n  \"status\" : \"status\", \n\"active\" : \"active\"}",
+        "indexName": "aurora-ticket",
+        "esInstance" : "PRIMARY",
+        "aggrQuery": "{\"aggs\":{\"ticketsPerAppName\":{\"terms\":{\"field\":\"appName.keyword\",\"size\":100},\"aggs\":{\"value_count\":{\"value_count\":{\"field\":\"id\"}}}}}}"
+      }
+    ],
+    "chartType": "pie",
+    "valueType": "number",
+    "action": "",
+    "documentType": "_doc",
+    "drillChart": "none",
+    "aggregationPaths": [
+      "ticketsPerAppName"
+    ],
+    "insight": {
+    },
+    "_comment": " "
+  },
+  "ticketsPerTicketStatus": {
+    "chartName": "Tickets Per Ticket Status",
+    "queries": [
+      {
+        "module": "COMMON",
+        "requestQueryMap": "{\r\n  \"status\" : \"status\", \n\"active\" : \"active\"}",
+        "dateRefField": "createdTimeTS",
+        "indexName": "aurora-ticket",
+        "esInstance" : "PRIMARY",
+        "aggrQuery": "{\"aggs\":{\"ticketsPerTicketStatus\":{\"terms\":{\"field\":\"status.keyword\",\"size\":100},\"aggs\":{\"value_count\":{\"value_count\":{\"field\":\"id\"}}}}}}"
+
+      }
+    ],
+    "chartType": "pie",
+    "valueType": "number",
+    "action": "",
+    "documentType": "_doc",
+    "drillChart": "none",
+    "aggregationPaths": [
+      "ticketsPerTicketStatus"
+    ],
+    "insight": {
+    },
+    "_comment": " "
+  },
+  "ticketsPerCountry": {
+    "chartName": "Tickets Per Country",
+    "queries": [
+      {
+        "module": "COMMON",
+        "requestQueryMap": "{\r\n  \"status\" : \"status\", \n\"active\" : \"active\"}",
+        "dateRefField": "createdTimeTS",
+        "indexName": "aurora-ticket",
+        "esInstance" : "PRIMARY",
+        "aggrQuery": "{\"aggs\":{\"ticketsPerCountry\":{\"terms\":{\"field\":\"country.keyword\",\"size\":100},\"aggs\":{\"value_count\":{\"value_count\":{\"field\":\"id\"}}}}}}"
+
+      }
+    ],
+    "chartType": "pie",
+    "valueType": "number",
+    "action": "",
+    "documentType": "_doc",
+    "drillChart": "none",
+    "aggregationPaths": [
+      "ticketsPerCountry"
+    ],
+    "insight": {
+    },
+    "_comment": " "
+  },
+  "ticketsPerHelpdesk": {
+    "chartName": "Tickets Per Helpdesk",
+    "queries": [
+      {
+        "module": "COMMON",
+        "requestQueryMap": "{\r\n  \"status\" : \"status\", \n\"active\" : \"active\"}",
+        "dateRefField": "createdTimeTS",
+        "indexName": "aurora-ticket",
+        "esInstance" : "PRIMARY",
+        "aggrQuery": "{\"aggs\":{\"ticketsPerHelpdesk\":{\"terms\":{\"field\":\"helpdeskId\",\"size\":100},\"aggs\":{\"value_count\":{\"value_count\":{\"field\":\"id\"}}}}}}"
+
+      }
+    ],
+    "chartType": "bar",
+    "valueType": "number",
+    "action": "",
+    "documentType": "_doc",
+    "drillChart": "none",
+    "aggregationPaths": [
+      "ticketsPerHelpdesk"
+    ],
+    "insight": {
+    },
+    "_comment": " "
+  },
+  "ticketsPerDevice": {
+    "chartName": "Tickets Per Device",
+    "queries": [
+      {
+        "module": "COMMON",
+        "requestQueryMap": "{\r\n  \"status\" : \"status\", \n\"active\" : \"active\"}",
+        "dateRefField": "createdTimeTS",
+        "indexName": "aurora-ticket",
+        "esInstance" : "PRIMARY",
+        "aggrQuery": "{\"aggs\":{\"ticketsPerDevice\":{\"terms\":{\"field\":\"deviceManufacture.keyword\",\"size\":100},\"aggs\":{\"value_count\":{\"value_count\":{\"field\":\"id\"}}}}}}"
+
+      }
+    ],
+    "chartType": "pie",
+    "valueType": "number",
+    "action": "",
+    "documentType": "_doc",
+    "drillChart": "none",
+    "aggregationPaths": [
+      "ticketsPerDevice"
+    ],
+    "insight": {
+    },
+    "_comment": " "
+  },
+  "ratingShare": {
+    "chartName": "Rating Share",
+    "queries": [
+      {
+        "module": "COMMON",
+        "requestQueryMap": "{\r\n  \"status\" : \"status\", \n\"active\" : \"active\"}",
+        "dateRefField": "createdTimeTS",
+        "indexName": "aurora-ticket",
+        "esInstance" : "PRIMARY",
+        "aggrQuery": "{\"aggs\":{\"ratingShare\":{\"terms\":{\"field\":\"rate\",\"size\":100},\"aggs\":{\"value_count\":{\"value_count\":{\"field\":\"id\"}}}}}}"
+
+      }
+    ],
+    "chartType": "pie",
+    "chartLibrary" : "d3",
+    "valueType": "number",
+    "action": "",
+    "documentType": "_doc",
+    "drillChart": "none",
+    "aggregationPaths": [
+      "ratingShare"
+    ],
+    "insight": {
+    },
+    "_comment": " "
+  },
+  "interviewDepartmentShare": {
+    "chartName": "Interview Department Split Share",
+    "queries": [
+      {
+        "module": "COMMON",
+        "requestQueryMap": "{\r\n  \"type\" : \"type\", \n\"location\" : \"location\"}",
+        "dateRefField": "date",
+        "indexName": "thire_interview",
+        "esInstance" : "SECONDARY",
+        "aggrQuery": "{\"aggs\":{\"InterviewDepartment\":{\"terms\":{\"field\":\"openPosition.department.keyword\",\"size\":100},\"aggs\":{\"value_count\":{\"value_count\":{\"field\":\"interviewId\"}}}}}}"
+
+      }
+    ],
+    "chartType": "pie",
+    "valueType": "number",
+    "action": "",
+    "documentType": "_doc",
+    "drillChart": "none",
+    "aggregationPaths": [
+      "InterviewDepartment"
+    ],
+    "insight": {
+    },
+    "_comment": " "
+  }
+}

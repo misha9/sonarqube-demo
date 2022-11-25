@@ -1,0 +1,27 @@
+{
+  "interviewDepartmentShare": {
+    "chartName": "Interview Department Split Share",
+    "queries": [
+      {
+        "module": "COMMON",
+        "requestQueryMap": "{\r\n  \"type\" : \"type\", \n\"location\" : \"location\"}",
+        "dateRefField": "date",
+        "indexName": "thire_interview",
+        "esInstance" : "SECONDARY",
+        "aggrQuery": "{\"aggs\":{\"InterviewDepartment\":{\"terms\":{\"field\":\"openPosition.department.keyword\",\"size\":100},\"aggs\":{\"value_count\":{\"value_count\":{\"field\":\"interviewId\"}}}}}}"
+
+      }
+    ],
+    "chartType": "pie",
+    "valueType": "number",
+    "action": "",
+    "documentType": "_doc",
+    "drillChart": "none",
+    "aggregationPaths": [
+      "InterviewDepartment"
+    ],
+    "insight": {
+    },
+    "_comment": " "
+  }
+}

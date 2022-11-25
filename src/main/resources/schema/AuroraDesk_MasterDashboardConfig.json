@@ -1,0 +1,171 @@
+{
+  "_comment": "Master dashboard which holds all the possible visualisation. Note new dashboards/visualisations can be added",
+  "dashboards": [
+    {
+      "name": "Aurora Desk Dashboards",
+      "id": "home",
+      "isActive": "",
+      "style": "tabbed",
+      "visualizations": [
+        {
+          "row": 1,
+          "name": "Performance Desk",
+          "vizArray": [
+            {
+              "id": 111,
+              "name": "",
+              "dimensions": {
+                "height": 350,
+                "width": 5
+              },
+              "vizType": "chart",
+              "noUnit": false,
+              "charts": [
+                {
+                  "id": "ticketsPerAppName",
+                  "name": "Tickets Per App Name",
+                  "code": "",
+                  "chartType": "pie",
+                  "filter": "",
+                  "headers": []
+                }
+              ]
+            },
+            {
+              "id": 112,
+              "name": "Ticket Trend Weekly",
+              "dimensions": {
+                "height": 350,
+                "width": 7
+              },
+              "vizType": "chart",
+              "noUnit": true,
+              "charts": [
+                {
+                  "id": "ticketTrend",
+                  "name": "Weekly",
+                  "code": "",
+                  "chartType": "line",
+                  "filter": "",
+                  "headers": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "row": 2,
+          "name": "Performance Desk",
+          "vizArray": [
+            {
+              "id": 123,
+              "name": "Tickets Per Ticket Status",
+              "dimensions": {
+                "height": 250,
+                "width": 4
+              },
+              "vizType": "chart",
+              "noUnit": true,
+              "charts": [
+                {
+                  "id": "ticketsPerTicketStatus",
+                  "name": "Tickets Per Ticket Status",
+                  "code": "",
+                  "chartType": "pie",
+                  "filter": "",
+                  "headers": []
+                }
+              ]
+            },
+            {
+              "id": 123,
+              "name": "Tickets Per Country",
+              "dimensions": {
+                "height": 250,
+                "width": 4
+              },
+              "vizType": "chart",
+              "noUnit": true,
+              "charts": [
+                {
+                  "id": "ticketsPerCountry",
+                  "name": "Tickets Per Country",
+                  "code": "",
+                  "chartType": "pie",
+                  "filter": "",
+                  "headers": []
+                }
+              ]
+            },
+            {
+              "id": 123,
+              "name": "Tickets Per Helpdesk",
+              "dimensions": {
+                "height": 250,
+                "width": 4
+              },
+              "vizType": "chart",
+              "noUnit": true,
+              "charts": [
+                {
+                  "id": "ticketsPerHelpdesk",
+                  "name": "Tickets Per Helpdesk",
+                  "code": "",
+                  "chartType": "bar",
+                  "filter": "",
+                  "headers": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "row": 3,
+          "name": "Performance Desk",
+          "vizArray": [
+            {
+              "id": 123,
+              "name": "Tickets Per Device",
+              "dimensions": {
+                "height": 250,
+                "width": 4
+              },
+              "vizType": "chart",
+              "noUnit": true,
+              "charts": [
+                {
+                  "id": "ticketsPerDevice",
+                  "name": "Tickets Per Device",
+                  "code": "",
+                  "chartType": "pie",
+                  "filter": "",
+                  "headers": []
+                }
+              ]
+            },
+            {
+              "id": 123,
+              "name": "Rating Share",
+              "dimensions": {
+                "height": 250,
+                "width": 4
+              },
+              "vizType": "chart",
+              "noUnit": true,
+              "charts": [
+                {
+                  "id": "ratingShare",
+                  "name": "Rating Share",
+                  "code": "",
+                  "chartType": "pie",
+                  "filter": "",
+                  "headers": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
